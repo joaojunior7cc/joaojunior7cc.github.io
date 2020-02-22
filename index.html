@@ -7,7 +7,7 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
- <!--    <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/main.css"> 
     
     <!--Linkando a lib Angular-->
     <script src="lib/angular/angular.js"></script>
@@ -17,10 +17,12 @@
 </head>
 <body ng-controller="homeCtrl">
 
-    <div ng-include="'view/header2.html'"></div>
-    <div>
-        <h1 class="unique-color-dark-">{{title}}</h1>
-    </div>
+    <div ng-include="'view/header.html'"></div>
+
+    <main class="masthead text-white text-center">
+        <div ng-include="'view/perfil.html'"></div>
+    </main>
+
     <div ng-include="'view/footer.html'"></div>
 
     <script src="lib/jquery-3.4.1.min.js" integrity="" crossorigin="anonymous"></script>
