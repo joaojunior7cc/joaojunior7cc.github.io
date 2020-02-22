@@ -1,5 +1,5 @@
 body{
-  background-color: #ad9c7717;
+  background-color: #fcfbf83a;
 }
 a,a:LINK, a:ACTIVE,a:VISITED{/*sub-classes*/
 	text-decoration: none;
@@ -20,12 +20,12 @@ main{
   background-color: #20140179;
 }
 
-.esp-left{
+.esp-left{/* header: espaco depois do sistema */
   padding-left: 55px;
 }
 
 #img-perfil{
-  padding-top: 140px;
+  padding-top: 105px;
   margin-top: -55px;
 }
 
@@ -82,7 +82,7 @@ main{
   font-size: 2rem;
 }
 .divider-custom.divider-light .divider-custom-line {
-  background-color: #052442;
+  background-color: #7e3c3cab;
 }
 
 #btn-header-nome{
