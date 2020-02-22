@@ -1,6 +1,7 @@
 body{
   background-color: #fcfbf83a;
 }
+
 a,a:LINK, a:ACTIVE,a:VISITED{/*sub-classes*/
 	text-decoration: none;
 	font-size: 15px; 
@@ -17,7 +18,7 @@ a:ACTIVE{color: rgb(245, 207, 136);}
 main{
   margin: 0px 25px 0px 15px;/*Retirando a margem do corpo*/
   padding: 0;/* Retirando Espaco interno do corpo*/
-  background-color: #20140179;
+  background-color: #20180179;
 }
 
 .esp-left{/* header: espaco depois do sistema */
@@ -27,6 +28,7 @@ main{
 #img-perfil{
   padding-top: 105px;
   margin-top: -55px;
+  margin-bottom: 0px;
 }
 
 #perfil{
@@ -55,12 +57,18 @@ main{
 }
 
 .divider-custom {
-  margin: 1.25rem 0 0.5rem;
+  margin: 1.0rem 0 0.5rem;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.divider-custom-icon {
+  padding-bottom: 3px;
+  margin-bottom: 1px;
+}
+
 .divider-custom .divider-custom-line {
   width: 100%;
   max-width: 7rem;

@@ -1,0 +1,18 @@
+
+<div class="ui-alert"><!-- chamada CSS -->
+    <!-- AULA 10 - Isso aqui eh tipo o corpo do alerta. Aqui eh o template que monta todo o alerta -->
+    <!-- qual scope? {{$id}} -->
+    <div class="ui-alert-title"><!-- chamada CSS -->
+        {{topic}}
+        <!--{{erro}} eh ignorado por eh do scopo 2 (la no Ctrl), 
+            e esse eh o scopo isolado 3 (no uiAlertDirective.js foi definido scope:{}),
+            ou seja, so funciona por passagem por parametro-->
+    </div>
+    <div class="ui-alert-message" ng-transclude ><!-- chamada CSS -->
+
+    </div>
+    <!--ANTES DO TRANSCLUDE div class="ui-alert-message">
+    {{message}}
+    </div-->
+</div>
+
