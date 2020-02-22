@@ -16,8 +16,11 @@
     <script src="js/controllers/homeCtrl.js"></script>
 </head>
 <body ng-controller="homeCtrl">
-    <h1 class="unique-color-dark-">{{title}}</h1>
 
+    <div ng-include="'view/header2.html'"></div>
+    <div>
+        <h1 class="unique-color-dark-">{{title}}</h1>
+    </div>
     <div ng-include="'view/footer.html'"></div>
 
     <script src="lib/jquery-3.3.1.min.js" integrity="" crossorigin="anonymous"></script>
