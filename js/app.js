@@ -1,1 +1,1 @@
-angular.module("mygithub",["ngMessages","serialGenerator","uiAccordion"]);
+angular.module("mygithub",["ngMessages","serialGenerator","uiAccordion","ngRoute"]);

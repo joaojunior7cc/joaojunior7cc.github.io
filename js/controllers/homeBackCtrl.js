@@ -1,9 +1,10 @@
 
-angular.module("mygithub").controller("homeBackCtrl",function ($scope,usuariosAPIService,serialGeneratorService) {
+angular.module("mygithub").controller("homeBackCtrl",function ($scope,usuariosAPIService,serialGenerator) {
     $scope.usuarios = [];
     $scope.usuario = [];  
     //$scope.serial = "";
 
+    console.log("controller");
     //dados Back-end
     var carregarUsuarios = function () {
         usuariosAPIService.getUsuariosBack().then(function(response) {
@@ -33,5 +34,5 @@ angular.module("mygithub").controller("homeBackCtrl",function ($scope,usuariosAP
     };
 
     carregarUsuarios();
-    console.log(serialGeneratorService.generate());
+    console.log(serialGenerator.generate());
 } );

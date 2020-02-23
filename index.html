@@ -17,18 +17,21 @@
     <script src="lib/angular/angular-route.js"></script>
     <script src="lib/serialGenerator/serialGenerator.js"></script>
     <script src="lib/ui/uiAccordion.js"></script>
+    <!-- Modules -->
     <script src="js/app.js"></script>
     <!-- Controllers -->
     <script src="js/controllers/homeJSONCtrl.js"></script>
     <!-- Servicos -->
     <script src="js/services/usuariosAPIService.js"></script>
     <!-- <script src="js/services/serialGeneratorService.js"></script> -->
+    <!-- Config -->
+    <script src="js/config/serialGeneratorConfig.js"></script>
+    <script src="js/config/routeConfig.js"></script>
     <!-- Filters -->
     <script src="js/filters/nameFilter.js"></script>
     <script src="js/filters/ellipsisFilter.js"></script>
-     <script src="js/directives/uiAlertDirective.js"></script>
+    <script src="js/directives/uiAlertDirective.js"></script>
     <script src="js/directives/uiDateDirective.js"></script>
-    <!--<script src="js/directives/uiPhoneDirective.js"></script>-->
     <!-- <script src="js/directives/uiAccordionDirective.js"></script>  -->
     <script src="js/value/configValue.js"></script>
 </head>
@@ -36,7 +39,7 @@
 
     <div ng-include="'view/header.html'"></div>
 
-    <main class="masthead text-white text-center">
+    <main class="masthead text-white text-center">  
         <div class="alerta" ng-if="err">
             <aside class="container d-flex align-items-center flex-column">            
                 <ui-alert title="Ops, Aconteceu um problema!"><!-- Como ja dito, tanto faz: uiAlert, uialert, ui-Alert, UIALERT-->
@@ -44,8 +47,8 @@
                     {{erro}}
                 </ui-alert>            
             </aside>
-        </div>  
-        <div ng-include="'view/perfil.html'"></div>
+          </div>        
+        <div ng-view></div>   
         <div ng-include="'view/competencias.html'"></div>
     </main>
 

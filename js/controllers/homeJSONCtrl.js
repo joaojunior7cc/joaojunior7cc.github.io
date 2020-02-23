@@ -2,7 +2,8 @@
 angular.module("mygithub").controller("homeJSONCtrl",function ($scope,usuariosAPIService,serialGenerator) {
     $scope.usuarios = [];
     $scope.usuario = [];  
-
+    
+    console.log("controller");
     //dados JSON
     var carregarUsuarios = function () {
         usuariosAPIService.getUsuariosJSON().then(function(response) {

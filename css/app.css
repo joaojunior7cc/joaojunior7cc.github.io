@@ -27,7 +27,7 @@ main{
 }
 
 #img-perfil{
-  padding-top: 105px;
+  padding-top: 100px;
   margin-top: -55px;
   margin-bottom: 0px;
 }
@@ -113,13 +113,16 @@ main{
   padding: 0px;
 }
 
-.accordions{
+#accordions{
   background-color: #0b2642ef;/* #2e2d26be; #0b2642ef; rgba(0, 0, 0, 0.473) */
   padding-top: 12px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 60px;
+  padding-right: 60px;
   padding-bottom: 22px;
   color: #052442;
+}
+#accordions h1,h2,h3,h4,h5{
+  color: burlywood;
 }
 
 .alerta{
