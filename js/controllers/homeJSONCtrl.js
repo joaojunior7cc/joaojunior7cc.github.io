@@ -1,5 +1,5 @@
 
-angular.module("mygithub").controller("homeJSONCtrl",function ($scope,usuariosAPIService,serialGeneratorService) {
+angular.module("mygithub").controller("homeJSONCtrl",function ($scope,usuariosAPIService,serialGenerator) {
     $scope.usuarios = [];
     $scope.usuario = [];  
 
@@ -31,5 +31,5 @@ angular.module("mygithub").controller("homeJSONCtrl",function ($scope,usuariosAP
     };
 
     carregarUsuarios();
-    console.log(serialGeneratorService.generate());
+    console.log(serialGenerator.generate());
 } );

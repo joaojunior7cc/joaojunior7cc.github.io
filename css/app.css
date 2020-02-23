@@ -113,10 +113,16 @@ main{
   padding: 0px;
 }
 
-.acc{
-  background-color: #0b2642ef;/* #2e2d26be; */
-  margin: 0px;
-  width: 100%;
-  padding: 35px;
+.accordions{
+  background-color: #0b2642ef;/* #2e2d26be; #0b2642ef; rgba(0, 0, 0, 0.473) */
+  padding-top: 12px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 22px;
   color: #052442;
+}
+
+.alerta{
+  background-color: #6b663e69;
+  padding: 5px;
 }

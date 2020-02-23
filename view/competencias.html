@@ -1,0 +1,26 @@
+<div class="accordions">
+    <aside class=" d-inline align-items-center flex-column">   
+        <!-- ui-accordions: esta diretiva eh pai das duas internas. 
+        Foi criada como estratagia de programacao (pode existir outra) para poder fazer 
+        a comunicao de eventos (click:abrir/fechar) entre elas. 
+        Elas sao diretiva irmas, e sem comunicao. -->
+        <ui-accordions><!-- Pai -->
+
+            <ui-accordion title = "Front-end"><!-- filha -->
+                + &nbsp&nbsp HTML5, CSS, JavaScript, Bootstrap, AngularJS<br/>
+                + &nbsp&nbsp JQuery, JSON, AJAX<br/>
+            </ui-accordion>
+
+            <ui-accordion title = "Back-end: Java"><!-- filha -->
+                + &nbsp&nbsp Java, JPA, Hibernate, CDI<br/>
+                + &nbsp&nbsp WildFly, Tomcat<br/>
+                + &nbsp&nbsp PostgreSQL, Mysql<br/>
+            </ui-accordion>
+            <ui-accordion title = "Outras competências"><!-- filha -->
+                + &nbsp&nbsp MVC, IoT (NodeMCU Esp8266, Raspberry Pi) <br/>
+                + &nbsp&nbsp Ubuntu, Windows<br/>
+                + &nbsp&nbsp Python, Linguagem C, PHP<br/>
+            </ui-accordion>
+        </ui-accordions>
+    </aside>   
+</div>

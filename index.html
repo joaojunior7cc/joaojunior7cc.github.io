@@ -10,24 +10,26 @@
     <link rel="stylesheet" type="text/css" href="css/app.css"> 
     <link rel="stylesheet" type="text/css" href="css/ui.css"> 
     
-    <!--Linkando a lib Angular-->
+    <!--Linkando lib -->
     <script src="lib/angular/angular.js"></script>
     <script src="lib/angular/angular-messages.js"></script>
     <script src="lib/angular/angular-locale_pt-br.js"></script>
     <script src="lib/angular/angular-route.js"></script>
+    <script src="lib/serialGenerator/serialGenerator.js"></script>
+    <script src="lib/ui/uiAccordion.js"></script>
     <script src="js/app.js"></script>
     <!-- Controllers -->
     <script src="js/controllers/homeJSONCtrl.js"></script>
     <!-- Servicos -->
     <script src="js/services/usuariosAPIService.js"></script>
-    <script src="js/services/serialGeneratorService.js"></script>
+    <!-- <script src="js/services/serialGeneratorService.js"></script> -->
     <!-- Filters -->
     <script src="js/filters/nameFilter.js"></script>
     <script src="js/filters/ellipsisFilter.js"></script>
      <script src="js/directives/uiAlertDirective.js"></script>
     <script src="js/directives/uiDateDirective.js"></script>
     <!--<script src="js/directives/uiPhoneDirective.js"></script>-->
-    <script src="js/directives/uiAccordionDirective.js"></script> 
+    <!-- <script src="js/directives/uiAccordionDirective.js"></script>  -->
     <script src="js/value/configValue.js"></script>
 </head>
 <body ng-controller="homeJSONCtrl">
@@ -35,43 +37,16 @@
     <div ng-include="'view/header.html'"></div>
 
     <main class="masthead text-white text-center">
-        <aside class="container d-flex align-items-center flex-column">            
-            <ui-alert title="Ops, Aconteceu um problema!" ng-if="err"><!-- Como ja dito, tanto faz: uiAlert, uialert, ui-Alert, UIALERT-->
-                <!--TRANSCLUDE {{$id}}=4 e nao eh isolado do 2, ou seja, ele herda as propriedades do acima, o {{$id}}=2!-->
-                {{erro}}
-            </ui-alert>            
-        </aside>
+        <div class="alerta" ng-if="err">
+            <aside class="container d-flex align-items-center flex-column">            
+                <ui-alert title="Ops, Aconteceu um problema!"><!-- Como ja dito, tanto faz: uiAlert, uialert, ui-Alert, UIALERT-->
+                    <!--TRANSCLUDE {{$id}}=4 e nao eh isolado do 2, ou seja, ele herda as propriedades do acima, o {{$id}}=2!-->
+                    {{erro}}
+                </ui-alert>            
+            </aside>
+        </div>  
         <div ng-include="'view/perfil.html'"></div>
-        <div class="acc">
-            <aside class="container d-flex align-items-center flex-column">   
-                <!-- ui-accordions: esta diretiva eh pai das duas internas. 
-                Foi criada como estratagia de programacao (pode existir outra) para poder fazer 
-                a comunicao de eventos (click:abrir/fechar) entre elas. 
-                Elas sao diretiva irmas, e sem comunicao. -->
-                <ui-accordions><!-- Pai -->
-
-                    <ui-accordion title = "Accordion 1"><!-- filha -->
-                        AULA 10 - DIRETIVA uiAlert foi criada:<br/>
-                        pasta: css &nbsp&nbsp&nbsp&nbsp          ui.css<br/>
-                        pasta: view &nbsp&nbsp&nbsp&nbsp        alert.html (template)<br/>
-                        pasta: directives &nbsp&nbsp&nbsp&nbsp   uiAlertDirective.js<br/>
-                        ANTES DO TRANSCLUDE, QDO USAVA A PROPRIEDADE SCOPO NA DIRETIVA!!!<br/>
-                        Esse title sera vinculado a uma propriedade do scope da diretiva ui-alert; passagem por parametro
-
-                    </ui-accordion>
-
-                    <ui-accordion title = "Accordion 2"><!-- filha -->
-                        AULA 10 - DIRETIVA uiAlert foi criada:<br/>
-                        pasta: css &nbsp&nbsp&nbsp&nbsp         ui.css<br/>
-                        pasta: view &nbsp&nbsp&nbsp&nbsp        alert.html (template)<br/>
-                        pasta: directives &nbsp&nbsp&nbsp&nbsp   uiAlertDirective.js<br/>
-                        ANTES DO TRANSCLUDE, QDO USAVA A PROPRIEDADE SCOPO NA DIRETIVA!!!<br/>
-                        Esse title sera vinculado a uma propriedade do scope da diretiva ui-alert; passagem por parametro
-                    </ui-accordion>
-
-                </ui-accordions>
-            </aside>   
-        </div>
+        <div ng-include="'view/competencias.html'"></div>
     </main>
 
     <div ng-include="'view/footer.html'"></div>
