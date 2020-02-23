@@ -54,13 +54,12 @@ header nav,#btn-header-nome{
 }
 #btn-header-nome a{
   margin-top: 0.35rem;
-  margin-bottom: -1.45rem;
+  margin-bottom: -1.95rem;
 }
 
 #btn-header-nome hr{
-  margin: 6px;
+  margin: 1px;
   margin-left: 5px;
-  padding: 0px;
 }
 .lista-sistema{
   padding: 0.9rem;

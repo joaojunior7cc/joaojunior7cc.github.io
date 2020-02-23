@@ -9,7 +9,7 @@ angular.module("mygithub").controller("homeJSONCtrl",function ($scope,usuariosAP
         usuariosAPIService.getUsuariosJSON().then(function(response) {
             console.log('GET OK ');
             $scope.usuarios = response.data.usuarios;
-            $scope.usuario = $scope.usuarios[1];
+            $scope.usuario = $scope.usuarios[0];
             //console.log($scope.usuarios);
             console.log($scope.usuario);
         },function (e) {
