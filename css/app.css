@@ -1,4 +1,4 @@
-/* Config de componentes: generalizando... ****************/
+/* Config generalizada de alguns componentes ... ****************/
 body{
   background-color: #fcfbf83a;
 }
@@ -52,14 +52,18 @@ header nav,#btn-header-nome{
   padding-top: 1px;
   padding-bottom: 0px;
 }
-#btn-header-nome h6{
+#btn-header-nome a{
   margin-top: 0.35rem;
   margin-bottom: -1.45rem;
 }
 
 #btn-header-nome hr{
-  margin: 0px;
+  margin: 6px;
+  margin-left: 5px;
   padding: 0px;
+}
+.lista-sistema{
+  padding: 0.9rem;
 }
 .div-sub-navbar{
   background-color: #7ec98293;/* #472323c2; */
