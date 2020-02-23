@@ -4,6 +4,7 @@
 angular.module("mygithub").filter("name",function () {
     //O primeiro param sempre eh o input (pode batizer com qlqr nome)
     return function (input) {
+        if(input === undefined) return "Falha no carregamento de dados";
         var listaDeNomes = input.split(" ");
         /*Assista Desvendadndo JavaScrip aula 09*/
         /* map: pega o array, e para cada elemento que tiver, ele vai derrivar um novo array,

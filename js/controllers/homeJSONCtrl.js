@@ -1,29 +1,32 @@
 
-angular.module("mygithub").controller("homeServCtrl",function ($scope,usuariosAPIService,serialGeneratorService) {
+angular.module("mygithub").controller("homeJSONCtrl",function ($scope,usuariosAPIService,serialGeneratorService) {
     $scope.usuarios = [];
     $scope.usuario = [];  
-    $scope.serial = "";
 
     //dados JSON
     var carregarUsuarios = function () {
-        usuariosAPIService.getUsuarios().then(function(response) {
+        usuariosAPIService.getUsuariosJSON().then(function(response) {
             console.log('GET OK ');
             $scope.usuarios = response.data.usuarios;
             $scope.usuario = $scope.usuarios[0];
             //console.log($scope.usuarios);
             console.log($scope.usuario);
         },function (e) {
-            console.log("Algo deu errado no GET: "+ e);
+            $scope.err = true;
+            $scope.erro = "Algo deu errado ["+$scope.err+"] no GET: "+ e;
+            console.log($scope.erro);
         });    
     };
 
      //dados JSON
     $scope.addUsuario = function (usuario) {
-        usuariosAPIService.saveUsuarios(usuario).then(function(response) {
+        usuariosAPIService.saveUsuariosJSON(usuario).then(function(response) {
             console.log('POST OK ');
             delete $scope.usuario;
         },function (e) {
-            console.log("Algo deu errado no POST: "+ e);
+            $scope.err = true;
+            $scope.erro = "Algo deu errado ["+$scope.err+"] no GET: "+ e;
+            console.log($scope.erro);
         });
     };
 

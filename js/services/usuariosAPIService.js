@@ -1,14 +1,29 @@
 angular.module("mygithub").factory("usuariosAPIService",function ($http,configValue) {
-    var _getUsuarios = function () {
-        //console.log(config.baseUrlValue+"/usuarios.json");
-        return $http.get(configValue.baseUrlValue+"/usuarios.json");
+
+    var _getUsuariosJSON = function () {
+        //console.log(configValue.baseUrlJSON+"/usuarios");
+        return $http.get(configValue.baseUrlJSON+"/usuarios.json");
     };
-    var _saveUsuarios = function (usuario) {
+
+    var _getUsuariosBack = function () {
+        //console.log(configValue.baseUrlBack+"/usuarios");
+        return $http.get(configValue.baseUrlBack+"/usuarios");
+    };    
+
+    var _saveUsuariosJSON = function (usuario) {
         //console.log(config.baseUrlValue+"/usuarios.json");
-        return $http.post(configValue.baseUrlValue+"/usuarios.json",usuario);
+        return $http.post(configValue.baseUrlJSON+"/usuarios.json",usuario);
     };
+
+    var _saveUsuariosBack = function (usuario) {
+        //console.log(config.baseUrlValue+"/usuarios.json");
+        return $http.post(configValue.baseUrlJBack+"/usuarios",usuario);
+    };
+    
     return{
-        getUsuarios : _getUsuarios,
-        saveUsuarios : _saveUsuarios
+        getUsuariosJSON : _getUsuariosJSON,
+        getUsuariosBack : _getUsuariosBack,
+        saveUsuariosJSON : _saveUsuariosJSON,
+        saveUsuariosBack : _saveUsuariosBack
     };
 });

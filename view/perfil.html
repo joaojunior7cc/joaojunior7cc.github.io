@@ -1,40 +1,39 @@
 <div id="perfil">
-    <aside class="container d-flex align-items-center flex-column">
-    
+  <aside class="container d-flex align-items-center flex-column">
         <!-- Masthead Avatar Image -->
-        <img id="img-perfil" class="masthead-avatar mb-5" src={{usuario.imgAvatar}} alt="" height="330" >
+    <img id="img-perfil" class="masthead-avatar mb-5" src={{usuario.imgAvatar}} alt="" height="330" >
   
         <!-- Masthead Heading -->
-        <h1 id="nome-perfil" class="masthead-heading text-uppercase mb-0">{{usuario.nome | name}}</h1>
+    <h1 id="nome-perfil" class="masthead-heading text-uppercase mb-0">{{usuario.nome | name}}</h1>
   
-        <!-- Icon Divider -->
-        <div class="divider-custom divider-light">
-          <div class="divider-custom-line"></div>
-          <div class="divider-custom-icon ">
-            <i class="{{usuario.icon}}"></i>
-          </div>
-          <div class="divider-custom-line"></div>
-        </div>
+    <!-- Icon Divider -->
+    <div class="divider-custom divider-light">
+      <div class="divider-custom-line"></div>
+      <div class="divider-custom-icon ">
+        <i class="{{usuario.icon}}"></i>
+      </div>
+      <div class="divider-custom-line"></div>
+    </div>
   
-        <!-- Masthead Subheading -->
-        <p class="masthead-subheading font-weight-light mb-0">{{usuario.profissao | name | ellipsis:0:20}} {{usuario.nivel | name}} - {{usuario.stack | name}} </p>
-        <p class="masthead-subheading font-weight-light mb-0">&lt;{{usuario.linguagens | name}}/&gt;</p>
+    <!-- Masthead Subheading -->
+    <p class="masthead-subheading font-weight-light mb-0">{{usuario.profissao | name | ellipsis:0:20}} {{usuario.nivel | name}} - {{usuario.stack | name}} </p>
+    <p class="masthead-subheading font-weight-light mb-0">&lt;{{usuario.linguagens | name}}/&gt;</p>
         
-        <!-- Footer Social Icons -->
-          <div class="col-lg-4 mb-5 mb-lg-0">
-              <h4 class="text-uppercase mb-4"></h4>
-              <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/joaojunior7cc">
-                <i class="fab fa-fw fa-facebook-f"></i>
-              </a>
-              <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/joaojunior7cc">
-                <i class="fab fa-fw fa-twitter"></i>
-              </a>
-              <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/joaojunior7cc">
-                <i class="fab fa-fw fa-linkedin-in"></i>
-              </a>
-              <a class="btn btn-outline-light btn-social mx-1" href="#">
-                <i class="fab fa-fw fa-dribbble"></i>
-              </a>
-            </div>
-      </aside>
+    <!-- Footer Social Icons -->
+    <div class="col-lg-4 mb-5 mb-lg-0">
+        <h4 class="text-uppercase mb-4"></h4>
+        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/joaojunior7cc">
+          <i class="fab fa-fw fa-facebook-f"></i>
+        </a>
+        <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/joaojunior7cc">
+          <i class="fab fa-fw fa-twitter"></i>
+        </a>
+        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/joaojunior7cc">
+          <i class="fab fa-fw fa-linkedin-in"></i>
+        </a>
+        <a class="btn btn-outline-light btn-social mx-1" href="#">
+          <i class="fab fa-fw fa-dribbble"></i>
+        </a>
+    </div>
+  </aside>
 </div>
