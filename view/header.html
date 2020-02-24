@@ -5,7 +5,7 @@
             <ul  class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <div id="btn-header-nome" class="navbar-brand">
-                        <a  class="nav-link" href="index.html">{{usuario.nome | name}}</a>
+                        <a  class="nav-link" href="index.html">{{usuario.nome | name | ellipsis:0:11}}</a>
                         <hr class="bg-danger mt-0 d-inline-block mx-auto" style="width: 60px;">
                     </div>
                 </li>
@@ -13,27 +13,28 @@
                 <li class="nav-item pt-2">
                     <a class="nav-link" href="https://github.com/joaojunior7cc/repositories">Repositórios</a>
                 </li>
+
+                <div class="navbar-nav me-auto">
+                    <li class="lista-sistema dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sistema<span class="caret"></span> </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#!/professores">Professores</a> </li>
+                            <li><a href="#!/professoresabas">Professores Abas</a> </li>
+                            <li><a href="#!/cursos">Cursos</a> </li>
+                            <li><a href="#!/cursosabas">Cursos Abas</a> </li>
+                            <li><a href="#!/cursosjson">Cursos JSON</a> </li>
+                            <li><a href="#!/">Alunos</a> </li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Turmas </li>
+                            <li><a href="#!/horarios">Horários</a> </li>
+                            <li><a href="#!/sobre">Conhecer a Escola</a> </li>
+                        </ul>
+                    </li>
+                </div>
             </ul>
-            <div class="navbar-nav me-auto">
-                <li class="lista-sistema dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sistema<span class="caret"></span> </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#!/professores">Professores</a> </li>
-                        <li><a href="#!/professoresabas">Professores Abas</a> </li>
-                        <li><a href="#!/cursos">Cursos</a> </li>
-                        <li><a href="#!/cursosabas">Cursos Abas</a> </li>
-                        <li><a href="#!/cursosjson">Cursos JSON</a> </li>
-                        <li><a href="#!/">Alunos</a> </li>
-                        <li role="separator" class="divider"></li>
-                        <li class="dropdown-header">Turmas </li>
-                        <li><a href="#!/horarios">Horários</a> </li>
-                        <li><a href="#!/sobre">Conhecer a Escola</a> </li>
-                    </ul>
-                </li>
-            </div>
-            <!-- <div class="esp-left">
-                <input type="text" ng-model="contato.data" name="data" placeholder="Data"  ui-date />
-            </div> -->
+            <div class="esp-left">
+                <input type="text" ng-model="usuario.nome" name="nome" placeholder="Nome" />
+            </div> 
 
         </div>
     </nav>

@@ -57,7 +57,7 @@
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
   
           <!-- Content -->
-          <h6 class="text-uppercase font-weight-bold">{{usuario.nome}}</h6>
+          <h6 class="text-uppercase font-weight-bold">{{usuario.nome | ellipsis:0:20}}</h6>
           <hr class="bg-danger accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>Estudante de Ciência da Computação focado em desenvolvimento web</p>
   
@@ -134,7 +134,7 @@
   
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a > {{usuario.nome | name}}</a>
+      <a > {{usuario.nome | name | ellipsis:0:30}}</a>
     </div>
     <!-- Copyright -->
   
