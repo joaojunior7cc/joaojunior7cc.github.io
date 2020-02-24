@@ -144,6 +144,7 @@ header nav,#btn-header-nome{
 }
 #competencias h3{
   color: burlywood;
+  margin-bottom: 20px;
 }
 ui-accordion{
   color: rgb(177, 138, 87);

@@ -1,6 +1,6 @@
 {
     "usuarios": [
-        {"id":"1", "nome": "joão júnior", "profissao" : "desenvolvedor Web", "nivel":"jr", "stack":"full stack", "linguagens":"java", "telefone": "9999-2222", "data": "22/02/2020", "imgAvatar": "avataaars2.svg", "icon":"fab fa-java"},
-        {"id":"2", "nome": "João Vitor", "profissao" : "web designer", "nivel":"Sr", "stack":"Front-end", "linguagens":"HTML, CSS e JavaScript", "telefone": "8888-1111", "data": "29/02/2021", "imgAvatar": "avataaars.svg", "icon":"fas fa-code"}
+        {"id":"1", "nome": "joão júnior", "profissao" : "desenvolvedor Web", "nivel":"jr", "stack":"full stack", "linguagens":"java", "telefone": "+ 55 (21) 9XXXX-XXXX", "email":"email@email.com","cidade":"Cidade","uf":"UF","pais":"BRA", "data": "22/02/2020", "imgAvatar": "avataaars2.svg", "icon":"fab fa-java"},
+        {"id":"2", "nome": "João Vitor", "profissao" : "web designer", "nivel":"Sr", "stack":"Front-end", "linguagens":"HTML, CSS e JavaScript", "telefone": "+ 55 (11) 9DDDD-DDDD","email":"fake@gmail.com","cidade":"Bueno Aires","uf":"PO","pais":"ARG", "data": "29/02/2021", "imgAvatar": "avataaars.svg", "icon":"fas fa-code"}
     ]
 }

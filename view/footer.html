@@ -57,7 +57,7 @@
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
   
           <!-- Content -->
-          <h6 class="text-uppercase font-weight-bold">João Júnior</h6>
+          <h6 class="text-uppercase font-weight-bold">{{usuario.nome}}</h6>
           <hr class="bg-danger accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>Estudante de Ciência da Computação focado em desenvolvimento web</p>
   
@@ -115,13 +115,13 @@
           <h6 class="text-uppercase font-weight-bold">Contato</h6>
           <hr class="bg-warning accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>
-            <i class="fas fa-home mr-3"></i> BRASIL, Brasil, BR</p>
+            <i class="fas fa-home mr-3"></i> {{usuario.cidade}}, {{usuario.uf}}, {{usuario.pais}}</p>
           <p>
-            <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+            <i class="fas fa-envelope mr-3"></i> {{usuario.email}}</p>
           <p>
-            <i class="fas fa-phone mr-3"></i> + 55 (DD) 9dddd-dddd</p>
+            <i class="fas fa-phone mr-3"></i> {{usuario.telefone}}</p>
           <p>
-            <i class="fas fa-print mr-3"></i> + 55 (DD) 9dddd-dddd</p>
+            <i class="fas fa-print mr-3"></i> {{usuario.telefone}}</p>
   
         </div>
         <!-- Grid column -->
@@ -134,7 +134,7 @@
   
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a > João Júnior</a>
+      <a > {{usuario.nome | name}}</a>
     </div>
     <!-- Copyright -->
   
