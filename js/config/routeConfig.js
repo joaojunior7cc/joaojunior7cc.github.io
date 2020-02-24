@@ -22,6 +22,9 @@ angular.module("mygithub").config(function ($routeProvider) {
         templateUrl: "view/competencias.html",//eh quem ira ser renderizado quando fizer /usuarios
         controller: "homeJSONCtrl"
     });
+    $routeProvider.when("/profile", {
+        templateUrl: "view/profile.html"
+    });
     $routeProvider.when("/error", {
         templateUrl: "view/error.html"
     });

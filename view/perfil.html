@@ -1,6 +1,6 @@
 
-<div id="perfil" >
-  <aside class="container d-flex align-items-center flex-column">
+<div class="single-page" >
+  <aside id="perfil" class="container d-flex align-items-center flex-column">
         <!-- Masthead Avatar Image -->
         <div id="img-perfil" class="mb-4">
           <img  id="img-avatar" class="masthead-avatar p-4 pb-2" src=img/{{usuario.imgAvatar}} alt="" height="330" >
@@ -8,16 +8,11 @@
           <hr class="bg-danger accent-2 mb-2 mt-0 d-inline-block mx-auto" style="width: 120px;">
           <h1 id="nome-perfil" class="masthead-heading text-uppercase ">{{usuario.nome | name}}</h1>
         </div>
-          
-    <div class="container">
-      <!-- Masthead Subheading -->
-      <p class="masthead-subheading font-weight-light mb-0">{{usuario.profissao | name | ellipsis:0:20}} {{usuario.nivel | name}} - {{usuario.stack | name}} </p>
-      <p class="masthead-subheading font-weight-light mb-0">&lt;{{usuario.linguagens | name}}/&gt;</p>
-    </div>      
+ 
 
     <!-- Perfil Social Icons -->
     <div class="col-lg-4 mb-5 mb-lg-0 ">
-        <h4 class="text-uppercase mb-4"></h4>
+        <h4 class="text-uppercase mb-3"></h4>
         <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/joaojunior7cc">
           <i class="fab fa-fw fa-facebook-f"></i>
         </a>
@@ -30,6 +25,12 @@
         <a class="btn btn-outline-light btn-social mx-1" href="#">
           <i class="fab fa-fw fa-dribbble"></i>
         </a>
-    </div>
+    </div>   
+
+    <div class="container m-4">
+      <!-- Masthead Subheading -->
+      <p class="masthead-subheading font-weight-light mb-0">{{usuario.profissao | name | ellipsis:0:20}} {{usuario.nivel | name}} - {{usuario.stack | name}} </p>
+      <p class="masthead-subheading font-weight-light mb-0">&lt;{{usuario.linguagens | name}}/&gt;</p>
+    </div>     
   </aside>
 </div>

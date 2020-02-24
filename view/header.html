@@ -1,9 +1,9 @@
 <header class="container">    
     <nav class="front-navbar navbar navbar-default navbar-expand-md fixed-top navbar-dark ">
-        <div class="container">
+        <div class="container-results">
             <div id="btn-header-nome" class="navbar-header">
                 <a  class="navbar-brand" href="#!/index.html">{{usuario.nome | name | ellipsis:0:11}}</a>
-                <!-- <hr class="bg-danger mt-0 d-inline-block mx-auto" style="width: 60px;"> -->
+                <!-- <hr class="bg-danger mt-0 d-inline-block mx-auto" style="width: 10px;"> -->
             </div>
         </div>
         <div>
@@ -29,13 +29,13 @@
                     <li><a href="#!/sobre">Conhecer a Escola</a> </li>
                 </ul>
             </li>
-        </div>
+        </div>  
         <div class="esp-left">
-            <input type="text" ng-model="usuario.nome" name="nome" placeholder="Nome" />
-        </div>  -->
+            <input type="text" ng-model="corbh" name="nome" placeholder="Nome" />
+        </div>-->
     </nav>
 
-    <nav class="back-navbar navbar navbar-default navbar-expand-md  fixed-top" ><!--  -->
+    <nav class="back-navbar back-navbar-{{corbh}} navbar navbar-default navbar-expand-md  fixed-top" ><!--  -->
         <div class="container">
           <!-- Grid row-->
             <div class="row py-4 d-flex align-items-center">
@@ -44,6 +44,23 @@
                  <h6 style="visibility: hidden;" class="mb-0">{{usuario.nome}}</h6>
                 </div>
              </div>
+        </div>
+    </nav>
+    
+    <nav class="barra-navbar navbar navbar-default navbar-expand-md  fixed-top " ><!--  -->
+        <div class="container-results">
+            <ul class="list-group  nav pt-4">
+                <li class="list-group-item active">
+                    <a class="navbar-btn m-auto" href="#!/perfil">Perfil</a>
+                </li>
+                <li class="list-group-item">
+                    <a class="navbar-btn" href="#!/profile">Profile</a>
+                </li>
+                <li class="list-group-item">
+                    <a class="navbar-btn" href="#!/error"> Error </a>
+                </li>
+
+            </ul>
         </div>
     </nav>
     

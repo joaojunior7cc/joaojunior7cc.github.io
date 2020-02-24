@@ -2,6 +2,7 @@
 angular.module("mygithub").controller("homeJSONCtrl",function ($scope,usuariosAPIService,serialGenerator) {
     $scope.usuarios = [];
     $scope.usuario = [];  
+    $scope.corbh = "verde";
     
     console.log("controller");
     //dados JSON
