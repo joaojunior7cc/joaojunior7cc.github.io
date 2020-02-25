@@ -61,44 +61,45 @@ header nav,#btn-header-nome{
 .lista-sistema{
   padding: 0.9rem;
 } */
+.front-navbar-margin{  
+  background-color: #7ec98293;
+  border-radius: 30%;
+  padding: 3.6rem;
+  z-index: 2;
+
+}
 
 .front-navbar{  
   background-color: rgb(62, 67, 73);
   padding: 15px;
-  
   z-index: 2;
 } 
 
-.back-navbar-amarela{
+.front-navbar-amarela{
   background-color: #c9c87e93;/* #472323c2; */
 }
-.back-navbar-verde{
+.front-navbar-verde{
   background-color: #7ec98293;/* #472323c2; */
 }
-.back-navbar-azul{
+.front-navbar-azul{
   background-color: #2334c793;/* #472323c2; */
 }
-.back-navbar-vermelha{
+.front-navbar-vermelha{
   background-color: #c0121293;/* #472323c2; */
 }
-.back-navbar-preta{
+.front-navbar-preta{
   background-color: #02020293;/* #472323c2; */
 }
-.back-navbar-branca{
+.front-navbar-branca{
   background-color: #ffffff93;/* #472323c2; */
 }
-.back-navbar-laranja{
+.front-navbar-laranja{
   background-color: #c9b17e93;/* #472323c2; */
 }
-.back-navbar-rosa{
+.front-navbar-rosa{
   background-color: #c42c7893;/* #472323c2; */
 }
-.back-navbar{  
-  z-index: 0;
-  padding-top: 35px;
-  border-radius: 2rem;
-  z-index: 1;
-}
+
 .barra-navbar{
   display: inline-table;
   background-color: rgb(62, 67, 73);
