@@ -61,7 +61,7 @@ header nav,#btn-header-nome{
 .lista-sistema{
   padding: 0.9rem;
 } */
-.front-navbar-margin{  
+.topo-navbar-margin{  
   background-color: #7ec98293;
   border-radius: 30%;
   padding: 3.6rem;
@@ -69,34 +69,34 @@ header nav,#btn-header-nome{
 
 }
 
-.front-navbar{  
+.topo-navbar{  
   background-color: rgb(62, 67, 73);
   padding: 15px;
   z-index: 2;
 } 
 
-.front-navbar-amarela{
+.topo-navbar-amarela{
   background-color: #c9c87e93;/* #472323c2; */
 }
-.front-navbar-verde{
+.topo-navbar-verde{
   background-color: #7ec98293;/* #472323c2; */
 }
-.front-navbar-azul{
+.topo-navbar-azul{
   background-color: #2334c793;/* #472323c2; */
 }
-.front-navbar-vermelha{
+.topo-navbar-vermelha{
   background-color: #c0121293;/* #472323c2; */
 }
-.front-navbar-preta{
+.topo-navbar-preta{
   background-color: #02020293;/* #472323c2; */
 }
-.front-navbar-branca{
+.topo-navbar-branca{
   background-color: #ffffff93;/* #472323c2; */
 }
-.front-navbar-laranja{
+.topo-navbar-laranja{
   background-color: #c9b17e93;/* #472323c2; */
 }
-.front-navbar-rosa{
+.topo-navbar-rosa{
   background-color: #c42c7893;/* #472323c2; */
 }
 
