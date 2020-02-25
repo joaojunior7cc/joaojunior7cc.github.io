@@ -5,12 +5,12 @@ angular.module("mygithub").controller("homeJSONCtrl",function ($scope,usuariosAP
     $scope.userselect=0; // usuario padrao
     $scope.curriculos = [];
     $scope.curriculo = [];
-    $scope.corbh = "verde";
+    $scope.color = "verde";
     
     console.log($scope.userselect);
 
     $scope.setCor = function (cor) {
-        $scope.corbh = cor;
+        $scope.color = cor;
         console.log(cor);
     };
 

@@ -1,6 +1,6 @@
 <header class="container">    
 
-    <nav class="topo-navbar-margin topo-navbar-cor-{{corbh}} navbar navbar-default navbar-expand-md fixed-top">
+    <nav class="topo-navbar-margin topo-navbar-cor-{{color}} navbar navbar-default navbar-expand-md fixed-top">
         <nav class="topo-navbar navbar navbar-default navbar-expand-md fixed-top navbar-dark ">
             <div class="container-results">
                 <div id="btn-nome" class="navbar-header">
@@ -8,35 +8,31 @@
                     <!-- <hr class="bg-danger mt-0 d-inline-block mx-auto" style="width: 10px;"> -->
                 </div>
             </div>
-            <div>
+            <!-- <div>
                 <ul class="nav navbar-nav mr-auto">
                     <li class="active">
                         <a class="nav-link" href="https://github.com/joaojunior7cc/repositories">Repositórios</a>
                     </li>
                 </ul>
-            </div>
-            <!-- <div class="nav navbar-nav me-auto dropdown">
-                <li class="lista-sistema ">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sistema<span class="caret"></span> </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#!/professores">Professores</a> </li>
-                        <li><a href="#!/professoresabas">Professores Abas</a> </li>
-                        <li><a href="#!/cursos">Cursos</a> </li>
-                        <li><a href="#!/cursosabas">Cursos Abas</a> </li>
-                        <li><a href="#!/cursosjson">Cursos JSON</a> </li>
-                        <li><a href="#!/">Alunos</a> </li>
-                        <li role="separator" class="divider"></li>
-                        <li class="dropdown-header">Turmas </li>
-                        <li><a href="#!/horarios">Horários</a> </li>
-                        <li><a href="#!/sobre">Conhecer a Escola</a> </li>
-                    </ul>
-                </li>
-            </div>  -->
+            </div> -->
             <div >
                 <!-- <input type="text" ng-model="corbh" placeholder="cor" />   -->
-                <a class="btn inline bg-success p-3 " href="" ng-model="corbh" ng-click="setCor('verde')"></a>          
-                <a class="btn inline bg-primary p-3" href="" ng-model="corbh" ng-click="setCor('azul')"></a> 
+                <a class="btn inline bg-success p-3 " ng-click="setCor('verde')"></a>          
+                <a class="btn inline bg-primary p-3"  ng-click="setCor('azul')"></a> 
+                <a class="btn inline bg-danger p-3 " ng-click="setCor('vermelho')"></a>
+                <a class="btn inline bg-warning p-3 " ng-click="setCor('amarelo')"></a>
             </div>
+            <div class="nav navbar-nav me-auto dropdown pl-2">
+                <li class="lista-sistema ">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Links<span class="caret"></span> </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="nnavbar-btn" href="https://github.com/joaojunior7cc/repositories">Repositórios</a></li>
+                        <li><a class="navbar-btn" href="#!/curriculo">Currículo</a>
+                        <li><a class="navbar-btn" href="#!/error"> Error </a>
+                    </ul>
+                </li>
+            </div>  
+
 
             <!-- <div class=" d-inline-flex pl-2">            
                 <select class="form-control " ng-model="usuario" ng-options=" usuario.id for usuario in usuarios">
@@ -48,7 +44,7 @@
         </nav>
     </nav>  
     
-    <nav class="barra-navbar navbar navbar-default navbar-expand-md  fixed-top " >
+    <!-- <nav class="barra-navbar navbar navbar-default navbar-expand-md  fixed-top " >
             <ul class="list-group  nav pt-4">
                 <li class="list-group-item active">
                     <a class="navbar-btn color0 m-auto" href="#!/perfil">HOME</a>
@@ -58,9 +54,8 @@
                 <li class="list-group-item">
                     <a class="navbar-btn" href="#!/error"> Error </a>
                 </li>
-
             </ul>
         </div>
-    </nav>
+    </nav> -->
     
 </header>

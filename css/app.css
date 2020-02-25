@@ -98,7 +98,7 @@ header #btn-nome a{
 header .topo-navbar-margin{  
   background-color: #7ec98293;
   border-radius: 30%;
-  padding: 3.6rem;
+  padding: 3.8rem;
   z-index: 2;
 
 }
@@ -109,13 +109,16 @@ header .topo-navbar{
   z-index: 2;
 } 
 
+header .topo-navbar-cor-branco{
+  background-color: #ffffff93;/* #472323c2; */
+}
 header .topo-navbar-cor-amarelo{
   background-color: #c9c87e93;/* #472323c2; */
 }
 header .topo-navbar-cor-verde{
   background-color: #7ec98293;/* #472323c2; */
 }
-header.topo-navbar-cor-azul{
+header .topo-navbar-cor-azul{
   background-color: #2334c793;/* #472323c2; */
 }
 header .topo-navbar-cor-vermelho{
@@ -136,11 +139,12 @@ header .topo-navbar-cor-rosa{
 
 header .barra-navbar{
   display: inline-table;
-  /* background:none ; */
+  background-color:#3E4349;
   margin-top: 98px;
-  padding-bottom: 8px;
-  padding-left: 16px;
+  margin-bottom: auto;
+  padding-left: 4px;
   padding-right: 9px;
+  padding-bottom: 28px;
   border-bottom-right-radius: 2rem;
   max-width: 110px ;
   max-height: 225px;
