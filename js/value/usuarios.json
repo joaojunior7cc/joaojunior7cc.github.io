@@ -9,20 +9,27 @@
             "resumo":"Resuma sua carreira aqui...",
             
             "formacoes":[
-                {"id":"1","descricao":"Ciência da Computação","datainicio":"2014.2","datatermino":"2021.1","instituicao":"IFCE Maracanaú","semestreatual":"8º semestre"}
+                {"id":"1","descricao":"Ciência da Computação","datainicio":"2014.2","datatermino":"2021.1","instituicao":"IFCE","semestreatual":"8º semestre"}
             ],
             "experiencias":[
-
                 {"id":"3","empresa":"Hospital distrital","cargo":"Agente administrativo","subcargo":"assistente de farmácia","dataadmissao":"2012.1","datademissao":"2013.2","descricaofuncao":"Ag. Administrativo: Recebimento de material medico-hospitalar, nota fiscal, entrada no sistema,etc. Auxiliar de farmácia: Abastecimento de material medico-hospitalar e medicamento.","tecnologias":["PC","impressora","windows", "telefone","excel"]},
                 {"id":"2","empresa":"auntônomo","cargo":"tec. manutenção de computadores","subcargo":"operador de micro","dataadmissao":"2008","datademissao":"2011","descricaofuncao":"Manutenção de PC: Formatação de S.O, limpeza, diagnoticos de defeitos, reposição de peças, etc. Operador: impressão de curriculos, faturas, impostos, digitação de trabalhos.","tecnologias":["PC","impressora","S.O.", "Windows","Ubuntu"]},
                 {"id":"1","empresa":"supermercado","cargo":"operador de caixa","subcargo":"Repositor","dataadmissao":"2004","datademissao":"2007","descricaofuncao":"Regristro de mercadores, higiennização do ambiente de trabalho, reposição de mercadoria e recebimento de pagamento.","tecnologias":["espécie","cartão de crédito","cartão de débito"]}
 
             ],
             "premios":[
-                {"id":"3","nome":"MoveIT-IFCE","descricao":"Vencedor do Hackathon APM terminals 2019 com a equipe J3","datainicio":"2019.1","datatermino":"2019.1","cargahorario":"48h"},
-                {"id":"2","nome":"IoT-IFCE","descricao":"Desenvolvimento com IoT (Internet of Things) - NodeMCU Esp8266, Raspberry Pi 3B+ no LAESE (Laboratório de Eletrônica e Sistemas Embarcados)","datainicio":"2016.2","datatermino":"2016.2","cargahorario":"240h"},
-                {"id":"1","nome":"Monitoria de FUP-IFCE","descricao":"Monitor da cadeira do S1 Fundamentos da Programação com a linguagem Python","datainicio":"2015.2","datatermino":"2016.1","cargahorario":"256h"}
+                {"id":"1","nome":"MoveIT-IFCE","descricao":"Vencedor do Hackathon APM terminals 2019 com a equipe J3","datainicio":"2019.1","datatermino":"2019.1","cargahorario":"48h"}
  
+            ],
+            "extras":[
+                {"id":"2","empresa":"IFCE","cargo":"Volutário","dataadmissao":"2016.2","datatermino":"2016.2","descricaofuncao":"Desenvolvimento com IoT (Internet of Things) - NodeMCU Esp8266, Raspberry Pi 3B+ no LAESE (Laboratório de Eletrônica e Sistemas Embarcados)","cargahoraria":"240h"},
+                {"id":"1","empresa":"IFCE","cargo":"Monitor","dataadmissao":"2015.2","datatermino":"2016.1","descricaofuncao":"Monitor da cadeira do S1 Fundamentos da Programação com a linguagem Python","cargahoraria":"256h"}
+            ],
+            "cursos":[
+                {"id":"3","empresa":"Udemy","nome":"Desenvolvimento Web Completo","dataincio":"2020.1","datatermino":"2020.2","descricaofuncao":"Desenvolvimento de Web Full Stack. Frontend: HTM5,CSS3,jQuey,Bootstrap,AJAX e JavaScript. Backend: PHP, Apache, PDO, MySQL, PostgreSQL ","cargahoraria":"120h"},
+                {"id":"3","empresa":"Udemy","nome":"Java Web","dataincio":"2019.2","datatermino":"2019.2","descricaofuncao":"Desenvolvimento de Web Full Stack. Frontend: HTM5,CSS3,jQuey,Bootstrap, AJAX e JavaScript. Backend: Java, JPS, CDI, Hibernate, MySQL, PostgreSQL e WildFly","cargahoraria":"120h"},
+                {"id":"2","empresa":"UTD","nome":"Web design","dataincio":"2019.2","datatermino":"2019.2","descricaofuncao":"Desenvolvimento de front-end (Web site) usando HTM5,CSS3,jQuey,Bootstrap e JavaScript","cargahoraria":"120h"},
+                {"id":"1","empresa":"SENAC","nome":"Manutenção e Montagem de Computadores","dataincio":"2004.2","datatermino":"2004.2","descricaofuncao":"Especializaoção em manutenção e montagem de microcomputadores em geral","cargahoraria":"60h"}
             ],
             "habilidades":[
 

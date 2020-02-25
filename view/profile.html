@@ -65,8 +65,57 @@
 								    </article><!--//resume-timeline-item-->
 							    </div><!--//resume-timeline-->
 						    </div>
-					    </section><!--//experience-section-->
-				    </div>
+						</section><!--//experience-section-->
+						<section class="resume-section experience-section mb-5">
+							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Experiências extras</h2>
+							<div class="resume-section-content">
+								<div class="resume-timeline position-relative" ng-repeat="extra in curriculo.extras" >		
+									
+									<article class="resume-timeline-item position-relative">
+										
+										<div class="resume-timeline-item-header mb-2">
+											<div class="d-flex flex-column flex-md-row">
+												<h3 class="resume-position-title font-weight-bold mb-1">{{extra.cargo | name}} </h3>
+												<div class="resume-company-name ml-auto">{{extra.empresa | name}}</div>
+											</div><!--//row-->
+											<div class="resume-position-time">{{extra.dataadmissao}} - {{extra.datatermino}}</div>
+
+											<div class="resume-company-name ml-auto">{{extra.cargahoraria | name}}</div>
+										</div><!--//resume-timeline-item-header-->
+										<div class="resume-timeline-item-desc">
+											<p>{{extra.descricaofuncao}}</p>												
+										</div><!--//resume-timeline-item-desc-->
+
+									</article><!--//resume-timeline-item-->
+								</div><!--//resume-timeline-->
+							</div>
+						</section><!--//experience-section-->
+						<section class="resume-section experience-section mb-5">
+							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Cursos extras</h2>
+							<div class="resume-section-content">
+								<div class="resume-timeline position-relative" ng-repeat="curso in curriculo.cursos" >		
+									
+									<article class="resume-timeline-item position-relative">
+										
+										<div class="resume-timeline-item-header mb-2">
+											<div class="d-flex flex-column flex-md-row">
+												<h3 class="resume-position-title font-weight-bold mb-1">{{curso.nome | name}} </h3>
+												<div class="resume-company-name ml-auto">{{curso.empresa | name}}</div>
+											</div><!--//row-->
+											<div class="resume-position-time">{{curso.datainicio}} - {{curso.datatermino}}</div>
+
+											<div class="resume-company-name ml-auto">{{curso.cargahoraria | name}}</div>
+										</div><!--//resume-timeline-item-header-->
+										<div class="resume-timeline-item-desc">
+											<p>{{extra.descricaofuncao}}</p>												
+										</div><!--//resume-timeline-item-desc-->
+
+									</article><!--//resume-timeline-item-->
+								</div><!--//resume-timeline-->
+							</div>
+						</section><!--//experience-section-->
+					</div>
+					
 
 
 					<div class="lateral-curriculo col-lg-3" >
