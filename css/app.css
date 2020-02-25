@@ -9,7 +9,7 @@ a,a:LINK, a:ACTIVE,a:VISITED{/*sub-classes*/
 	font-size: 15px; 
 }
 
-a:LINK{color: #7ec98293;}
+a:LINK{color: #3eff4893;}
 a:VISITED{color: rgb(177, 90, 90);}
 a:ACTIVE{color: rgb(245, 207, 136);}
 
@@ -18,50 +18,84 @@ a:ACTIVE{color: rgb(245, 207, 136);}
   padding-bottom: 5rem;
   color: #fff;
 }
+/* Lembrando forma de invocar: ***************************
+    id:     #
+    class   .
+  OBS1: A maior parte dos ids aqui representao uma pagina ou arquivo.
+    por exemplo:
+      index.html:   #index-principael     
+      perfil.html:  #perdil
 
-main{
+  Casos especificos como o header:
+    Nao faria sentido cria um id header para um arquivo header.html,
+    ainda com uma tag container principal se chamando header!
+    sol.: incovar a tag header diretamente aqui:
+      header
+
+  OBS 2: Padrao de boa partica usado:
+    1- chamar sempre primeiro o id do arquivo.html!
+        Pq? Questao de saber instantaneamente (so olhando)
+        ,qual aqruivo esta sendo editado, ou seja, localizao instantanea!
+        p.e. #perfil a
+             indica que no perfil.html a tag 'a' esta sendo afetada! 
+    2- Mesmo evitando cria id para qlqr container, nao eh um pecado cria-lo!
+         p.e. #perfil #avatar-img
+              eh perfeitamente aceitavel um id para a foto do avatar de perfil!
+  ********************************/
+#index-principal{
   margin: 12px 16px 0px 15px;/*Retirando a margem do corpo*/
   box-shadow: -2px 5px 24px  #1B1C1C, 12px 19px 2px rgba(0, 0, 0, 0.1),
               -2px 15px 24px #1B1C1C, 12px 195px 2px rgba(0, 0, 0, 0.2);
    /* Sobrear no Bootstrap: shadow-lg */
   background-image: url(../img/back-office5.jpg);
   background-repeat: round repeat;/* encaixa a imagem na div */
+  
   max-width: auto;
   max-height: auto;
   width: auto;
   height: auto;
-  padding-top: 55px; 
 }  
-.single-page{
-  padding: 35px; 
+
+#index-principal .alerta{
+  padding: 15px;
+}
+#index-principal .palicula{
+  margin: 0;
+  padding: 0;
+  background-color: #20180179;
+}
+
+#index-principal .singlepage{
+  padding-top: 65px;
+  padding-bottom: 65px;
 }
 
 /* Header ***************************************************/
-header {
-  /* box-shadow: -2px 5px 24px  #1B1C1C, 9px 19px 2px rgba(0, 0, 0, 0.1); */
-}
+/* header {
+  box-shadow: -2px 5px 24px  #1B1C1C, 9px 19px 2px rgba(0, 0, 0, 0.1);
+} */
 header .topo-navbar,.topo-navbar-margin,#btn-header-nome{
   box-shadow: -2px 5px 24px  #1B1C1C, 9px 10px 2px rgba(0, 0, 0, 0.1);  
 }
 
-#btn-header-nome{
+header #btn-nome{
   border-radius:48%;
   /* background-color: #255a8b4f; */
   background-image: linear-gradient(to bottom, #7ec98293, #255a8b4f,#255a8b44, #83c08693);
   padding: 10px;
 }
-#btn-header-nome a{
+header #btn-nome a{
   font-size: medium;
 }
-
-#btn-header-nome hr{
+/*
+#btn-nome hr{
   margin-left: 1px;
 }
-/* 
+
 .lista-sistema{
   padding: 0.9rem;
 } */
-.topo-navbar-margin{  
+header .topo-navbar-margin{  
   background-color: #7ec98293;
   border-radius: 30%;
   padding: 3.6rem;
@@ -69,41 +103,41 @@ header .topo-navbar,.topo-navbar-margin,#btn-header-nome{
 
 }
 
-.topo-navbar{  
+header .topo-navbar{  
   background-color: rgb(62, 67, 73);
   padding: 15px;
   z-index: 2;
 } 
 
-.topo-navbar-amarela{
+header .topo-navbar-cor-amarelo{
   background-color: #c9c87e93;/* #472323c2; */
 }
-.topo-navbar-verde{
+header .topo-navbar-cor-verde{
   background-color: #7ec98293;/* #472323c2; */
 }
-.topo-navbar-azul{
+header.topo-navbar-cor-azul{
   background-color: #2334c793;/* #472323c2; */
 }
-.topo-navbar-vermelha{
+header .topo-navbar-cor-vermelho{
   background-color: #c0121293;/* #472323c2; */
 }
-.topo-navbar-preta{
+header .topo-navbar-cor-preto{
   background-color: #02020293;/* #472323c2; */
 }
-.topo-navbar-branca{
+header .topo-navbar-cor-branco{
   background-color: #ffffff93;/* #472323c2; */
 }
-.topo-navbar-laranja{
+header .topo-navbar-cor-laranja{
   background-color: #c9b17e93;/* #472323c2; */
 }
-.topo-navbar-rosa{
+header .topo-navbar-cor-rosa{
   background-color: #c42c7893;/* #472323c2; */
 }
 
-.barra-navbar{
+header .barra-navbar{
   display: inline-table;
   /* background:none ; */
-  margin-top: 120px;
+  margin-top: 98px;
   padding-bottom: 8px;
   padding-left: 16px;
   padding-right: 9px;
@@ -113,22 +147,21 @@ header .topo-navbar,.topo-navbar-margin,#btn-header-nome{
   z-index: 1;
 }
 
-
 /* main *************************************************/
 
 /* perfil ***********/
-.perfil{
-  background-color: #20180179;
+#perfil{
 }
-#img-perfil {
+#perfil #container-img {
   background-color: #f5eeee;
   /* border-style: ridge; */
   border-radius: 10%;
   box-shadow: 0px 1px #1B1C1C, 7px 9px 2px rgba(0, 0, 0, 0.2);
   color: #489cf0;
   padding:  30px;
+  max-width: 470px;
 }
-#img-avatar{
+#perfil #avatar-img{
   /* background-color: #43555a3b;#6b663e3b */
   padding-bottom: 10px;
   margin-bottom: 25px;
@@ -186,22 +219,46 @@ header .topo-navbar,.topo-navbar-margin,#btn-header-nome{
   color:rgb(177, 138, 87);
   margin-bottom: 20px;
 }
-ui-accordion{
+#competencias ui-accordion{
   color: rgb(177, 138, 87);
 }
-.alerta{
-  background-color: #6b663e69;
-  padding: 5px;
-}
+
 
 /* Footer */
 footer hr {
   height: 1.3px;
 }
 
-/*profile */
-#profile-index{
-  z-index: 0;
-  padding-top:0px ;
-  margin-top: 0px;
+/* Curriculo */
+#curriculo{
+  word-wrap: break-word;/*nao deixa o texto sair da div*/  
+}
+
+#curriculo header .container-img{
+  background-color: #f5eeee;
+  border-radius: 10%;
+}
+
+#curriculo header .titulo{
+  background-color: rgb(20, 53, 104);
+}
+#curriculo .resumo{
+  background-color: rgb(175, 175, 175);
+ color: #052442;
+}
+#curriculo article{
+  background-color: #ffffff; 
+}
+
+#curriculo #col-corpo{
+  font-family: inherit;
+  color: #434E5E;
+}
+#curriculo h2{
+  border-bottom: 1px solid #434E5E;
+}
+#curriculo #col-lateral{
+  background-color: #f0f0f0;
+  color: #434E5E;
+  text-align: left;
 }

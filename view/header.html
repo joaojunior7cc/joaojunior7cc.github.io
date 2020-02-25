@@ -1,9 +1,9 @@
 <header class="container">    
 
-    <nav class="topo-navbar-margin topo-navbar-{{corbh}} navbar navbar-default navbar-expand-md fixed-top">
+    <nav class="topo-navbar-margin topo-navbar-cor-{{corbh}} navbar navbar-default navbar-expand-md fixed-top">
         <nav class="topo-navbar navbar navbar-default navbar-expand-md fixed-top navbar-dark ">
             <div class="container-results">
-                <div id="btn-header-nome" class="navbar-header">
+                <div id="btn-nome" class="navbar-header">
                     <a  class="navbar-brand" href="#!/index.html">{{usuario.nome | name | ellipsis:0:11}}</a>
                     <!-- <hr class="bg-danger mt-0 d-inline-block mx-auto" style="width: 10px;"> -->
                 </div>
@@ -34,8 +34,8 @@
             </div>  -->
             <div >
                 <!-- <input type="text" ng-model="corbh" placeholder="cor" />   -->
-                <a class="btn inline bg-danger p-3" href="" ng-model="corbh" ng-click="setCor('vermelha')"></a>    
-                <a class="btn inline bg-success p-3" href="" ng-model="corbh" ng-click="setCor('verde')"></a>      
+                <a class="btn inline bg-success p-3 " href="" ng-model="corbh" ng-click="setCor('verde')"></a>          
+                <a class="btn inline bg-primary p-3" href="" ng-model="corbh" ng-click="setCor('azul')"></a> 
             </div>
 
             <!-- <div class=" d-inline-flex pl-2">            
@@ -48,15 +48,13 @@
         </nav>
     </nav>  
     
-    <nav class="barra-navbar navbar navbar-default navbar-expand-md  fixed-top " ><!--  -->
-        <div class="container-results">
+    <nav class="barra-navbar navbar navbar-default navbar-expand-md  fixed-top " >
             <ul class="list-group  nav pt-4">
                 <li class="list-group-item active">
                     <a class="navbar-btn color0 m-auto" href="#!/perfil">HOME</a>
                 <li class="list-group-item">
-                    <a class="navbar-btn" href="#!/profile">Currículo</a>
+                    <a class="navbar-btn" href="#!/curriculo">Currículo</a>
                 </li>
-
                 <li class="list-group-item">
                     <a class="navbar-btn" href="#!/error"> Error </a>
                 </li>

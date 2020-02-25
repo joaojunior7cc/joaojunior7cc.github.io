@@ -46,31 +46,31 @@
 <body ng-controller="homeJSONCtrl">
     <div ng-include="'view/header.html'"></div>
 
-    <main class="masthead text-white text-center">  
+    <main id="index-principal" class="masthead text-white text-center">  
+        <div class="palicula">       
+            <div class="singlepage"><!-- uso single para colocar padding etc --> 
+                <aside ng-if="err" class="alerta flex-column">            
+                    <ui-alert title="Ops, Aconteceu um problema!"><!-- Como ja dito, tanto faz: uiAlert, uialert, ui-Alert, UIALERT-->
+                        <!--TRANSCLUDE {{$id}}=4 e nao eh isolado do 2, ou seja, ele herda as propriedades do acima, o {{$id}}=2!-->
+                        {{erro}}
+                    </ui-alert>            
+                </aside>
+                
+                <aside ng-view></aside>   
 
-        <div class="alerta" ng-if="err">
-            <aside class="container d-flex align-items-center flex-column">            
-                <ui-alert title="Ops, Aconteceu um problema!"><!-- Como ja dito, tanto faz: uiAlert, uialert, ui-Alert, UIALERT-->
-                    <!--TRANSCLUDE {{$id}}=4 e nao eh isolado do 2, ou seja, ele herda as propriedades do acima, o {{$id}}=2!-->
-                    {{erro}}
-                </ui-alert>            
-            </aside>
-        </div>       
-
-        <div ng-view></div>   
-
-        <div ng-include="'view/competencias.html'"></div>
-
-        <!-- git 2 -->
-        <aside class="github">
-            <div class=" bag fixed">
-                <h1>Calendário de atividades do GitHub</h1>
-                <div class="calendar"></div>
             </div>
-        </aside>
-
+        </div>
     </main>
 
+    <aside ng-include="'view/competencias.html'" ></aside>
+    <!-- git 2 -->
+    <aside class="github p-4">
+        <div class="bag fixed p-4">
+            <h1>Calendário de atividades do GitHub</h1>
+            <div class="calendar "></div>
+        </div>
+    </aside>
+    
     <div ng-include="'view/footer.html'"></div>
 
     <script type="text/javascript" src="lib/jquery-3.4.1.min.js" integrity="" crossorigin="anonymous"></script>

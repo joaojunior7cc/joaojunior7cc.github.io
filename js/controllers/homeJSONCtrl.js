@@ -6,7 +6,6 @@ angular.module("mygithub").controller("homeJSONCtrl",function ($scope,usuariosAP
     $scope.curriculos = [];
     $scope.curriculo = [];
     $scope.corbh = "verde";
-
     
     console.log($scope.userselect);
 

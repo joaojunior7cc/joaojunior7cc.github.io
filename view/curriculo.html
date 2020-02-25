@@ -1,0 +1,220 @@
+
+<div id="curriculo" class="  flex-column">
+    <div class=" container mx-auto">
+        <header class="row ">
+			<!-- <div class="">
+				<a class="btn inline bg-secondary p-3 " href="" ng-model="corbh" ng-click="setCor('1')"></a> 
+				<a class="btn inline bg-primary p-3" href="" ng-model="corbh" ng-click="setCor('2')"></a>    
+			</div> --><!-- tentativa de mudar cores da page profile clickando nos buttons -->
+			<div class="container-img col-md-2">
+                <img class="mt-4 mb-3" src="img/{{usuario.imgAvatar}}" alt="">
+            </div>
+            <div class="titulo col-md-10 p-3">   
+				<div class="row text-left ">
+					<div class="col-md-7 m-2">
+						<h4 class=" text-white text-uppercase text-uppercase">{{usuario.nome}}</h4>
+						<div class=" mb-2">{{usuario.profissao | name}} {{usuario.nivel | name}} </div>
+						<div class="mb-2">{{usuario.stack | name}} - {{usuario.linguagens | name}}</div>
+						<ul class="list-unstyled">
+							<li class="mb-2"><a href="#"><i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i>{{usuario.email}}</a></li>
+							<li><a href="#"><i class="fas fa-mobile-alt fa-fw mr-2" data-fa-transform="grow-6"></i>{{usuario.telefone}}</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4 m-3">
+						<ul class=" list-unstyled">
+							<li class="mb-3"><a href="#"><span class="fa-container text-center mr-2"><i class="fab fa-linkedin-in fa-fw"></i></span>linkedin.com/in/stevedoe</a></li>
+							<li class="mb-3"><a href="#"><span class="fa-container text-center mr-2"><i class="fab fa-github-alt fa-fw"></i></span>github.com/username</a></li>
+							<li class="mb-3"><a href="#"><span class="fa-container text-center mr-2"><i class="fab fa-codepen fa-fw"></i></span>codepen.io/username/</a></li>
+							<li><a href="#"><span class="fa-container text-center mr-2"><i class="fas fa-globe"></i></span>yourwebsite.com</a></li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+        </header>
+        <div class="resumo row  ">
+            <div class="p-3">
+                <h3 class="text-uppercase font-weight-bold ">Resumo da Carreira</h3>
+                <p class="text-left ml-2">
+                    {{curriculo.resumo}}
+                </p>            
+            </div>
+        </div>
+        <article class="row p-1">    
+            <div id="col-corpo"class="col-md-9">                
+                <section class="text-left mb-5">
+                    <h2 class=" text-uppercase font-weight-bold pb-3 mb-3 ">Experiência de trabalho</h2>
+                    <div class="">
+                        <div class="position-relative" ng-repeat="experiencia in curriculo.experiencias" >		
+                            
+                            <article class=" position-relative">                                
+                                <div class=" mb-2">
+                                    <div class="d-flex flex-column flex-md-row  pt-5">
+                                        <h3 class=" font-weight-bold mb-1">{{experiencia.cargo | name}} <small class="text-muted">({{experiencia.subcargo | name}})</small></h3>
+                                        <div class=" ml-auto">{{experiencia.empresa | name}}</div>
+                                    </div>
+                                    <div class="">{{experiencia.dataadmissao}} - {{experiencia.datademissao}}</div>
+                                </div>
+                                <div >
+                                    <p>{{experiencia.descricaofuncao}}</p>
+                                    <h4 class=" font-weight-bold">Tecnologias utilizadas:</h4>
+                                    <div class="d-lg-inline-flex">
+                                        <ul class="list-inline inline-req" ng-repeat="tecnologia in experiencia.tecnologias">
+                                            <li class="pr-1"><span class="badge badge-primary badge-pill">{{tecnologia |name}}</span></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="text-left mb-5">
+                    <h2 class=" text-uppercase font-weight-bold pb-3 mb-3 ">Experiências extras</h2>
+                    <div class="">
+                        <div class="position-relative" ng-repeat="extra in curriculo.extras" >		
+                            
+                            <article class=" position-relative">                                
+                                <div class=" mb-2">
+                                    <div class="d-flex flex-column flex-md-row  pt-5">
+                                        <h3 class=" font-weight-bold mb-1">{{extra.cargo | name}}</h3>
+                                        <div class=" ml-auto">{{extra.empresa | name}}</div>
+                                    </div>
+                                    <div class="">{{extra.dataadmissao}} - {{extra.datatermino}}</div>
+
+                                    <div class=" ml-auto">{{extra.cargahoraria | name}}</div>
+                                </div>
+									<div class="resume-timeline-item-desc">
+										<p>{{extra.descricaofuncao}}</p>												
+                                </div>
+
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                
+                <section class="text-left mb-5">
+                    <h2 class=" text-uppercase font-weight-bold pb-3 mb-3 ">Cursos extras</h2>
+                    <div class="">
+                        <div class="position-relative" ng-repeat="curso in curriculo.cursos" >		
+                            
+                            <article class=" position-relative">                                
+                                <div class=" mb-2">
+                                    <div class="d-flex flex-column flex-md-row  pt-5">
+                                        <h3 class=" font-weight-bold mb-1">{{curso.nome | name}}</h3>
+                                        <div class=" ml-auto">{{curso.empresa | name}}</div>
+                                    </div>
+                                    <div class="">{{curso.datainicio}} - {{curso.datatermino}}</div>
+
+                                    <div class=" ml-auto">{{curso.cargahoraria | name}}</div>
+                                </div>
+									<div class="resume-timeline-item-desc">
+										<p>{{curso.descricaofuncao}}</p>												
+                                </div>
+
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+  
+
+
+            <div id="col-lateral" class="col-md-3">
+                <section class=" mb-5">
+                    <h2 class="text-uppercase font-weight-bold pb-3 mb-3">Educação</h2>
+                    <div class="r">
+                        <ul class="list-unstyled" ng-repeat="formacao in curriculo.formacoes">
+                            <li class="mb-2">
+                                <div class=" font-weight-bold">{{formacao.descricao}} </div>
+                                <div class="text-uppercase">{{formacao.instituicao}}</div>
+                                <div class="">({{formacao.datainicio}} - {{formacao.datatermino}})</div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class=" mb-5">
+                    <h2 class=" text-uppercase font-weight-bold pb-3 mb-3">Habilidades &amp; Ferramentas</h2>
+                    <div class="">
+                        <div class="" ng-repeat="habilidade in curriculo.habilidades">
+                            <h4 class="r font-weight-bold">{{habilidade.nome}}</h4>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2" ng-repeat="tecnologia in habilidade.tecnologias">
+                                    <div class="">{{tecnologia.nome}}</div>
+                                    <div class="progress ">
+                                        <!--abaixo estava assim: 
+                                                class="progress-bar theme-progress-bar-dark" -->
+                                        <div class="progress-bar " role="progressbar" style=" background-color: #66cb8c; width: {{tecnologia.nivel}}%"; aria-valuenow="25"; aria-valuemin="0"; aria-valuemax="100";></div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        
+                    <!--     
+                        <div class="resume-skill-item">
+                            <h4 class="resume-skills-cat font-weight-bold">Outros</h4>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><span class="badge badge-light">DevOps</span></li>
+                                <li class="list-inline-item"><span class="badge badge-light">Code Review</span></li>
+                                <li class="list-inline-item"><span class="badge badge-light">Git</span></li>
+                                <li class="list-inline-item"><span class="badge badge-light">Unit Testing</span></li>
+                                <li class="list-inline-item"><span class="badge badge-light">Wireframing</span></li>
+                                <li class="list-inline-item"><span class="badge badge-light">Sketch</span></li>
+                                <li class="list-inline-item"><span class="badge badge-light">Balsamiq</span></li>
+                                <li class="list-inline-item"><span class="badge badge-light">WordPress</span></li>
+                                <li class="list-inline-item"><span class="badge badge-light">Shopify</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                        -->
+                </section>
+                
+                <section class=" mb-5">
+                    
+                    <h2 class="r text-uppercase font-weight-bold pb-3 mb-3">Prêmios</h2>
+                    <div class=" " ng-repeat="premio in curriculo.premios">
+                        <ul class="list-unstyled">
+                            <li class="list-inline row ">   
+                                <div class="col-md-1 m-1">
+                                    <i class="fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
+                                </div>   
+                                <div class="col-md-10 m-1">                         
+                                    <div class="">{{premio.nome}}</div>
+                                    <div class="">{{premio.descricao}}</div>
+                                    <div class="">({{premio.datainicio}} - {{premio.datatermino}})</div>			
+                                </div> 							
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class=" mb-5">
+                    <h2 class=" text-uppercase font-weight-bold pb-3 mb-3">Idiomas</h2>
+                    <div class="r"  ng-repeat="idioma in curriculo.idiomas">
+                        <ul class="list-unstyled ">
+                            <li class="mb-2"><span class=" font-weight-bold">{{idioma.descricao |name}}</span> <small class="text-muted font-weight-normal">({{idioma.status}})</small></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class=" mb-5">
+                    <h2 class="text-uppercase font-weight-bold pb-3 mb-3">Interesses</h2>
+                    <div class="" ng-repeat="interesse in curriculo.interesses">
+                        <ul class="list-unstyled">
+                            <li class="mb-1">{{interesse.descricao}}</li>
+                        </ul>
+                    </div>
+                </section>				    
+
+
+            </div>    
+           
+        </article>
+    </div>
+</div>

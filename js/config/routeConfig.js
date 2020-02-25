@@ -22,9 +22,9 @@ angular.module("mygithub").config(function ($routeProvider) {
         templateUrl: "view/competencias.html",//eh quem ira ser renderizado quando fizer /usuarios
         controller: "homeJSONCtrl"
     });
-    $routeProvider.when("/profile", {
-        templateUrl: "view/profile.html"
-    });
+    $routeProvider.when("/curriculo", {
+        templateUrl: "view/curriculo.html"
+    });    
     $routeProvider.when("/github", {
         templateUrl: "view/github.html"
     });
