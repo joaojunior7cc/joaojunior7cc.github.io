@@ -27,35 +27,35 @@
             "habilidades":[
 
                 {"id":"1","nome":"frontend","tecnologias":  [   
-                                                                {"nome":"HTML5","nivel":78},
-                                                                {"nome":"CSS3","nivel":85},
-                                                                {"nome":"JavaScript","nivel":88}, 
-                                                                {"nome":"Bootstrap","nivel":73},
-                                                                {"nome":"jQuery","nivel":82},
+                                                                {"nome":"HTML5","nivel":88},
+                                                                {"nome":"CSS3","nivel":78},
+                                                                {"nome":"JavaScript","nivel":58}, 
+                                                                {"nome":"Bootstrap","nivel":63},
+                                                                {"nome":"jQuery","nivel":35},
                                                                 {"nome":"JSON","nivel":71},
-                                                                {"nome":"AJAX","nivel":84}
+                                                                {"nome":"AJAX","nivel":22}
                                                             ]},
                 {"id":"2","nome":"backend","tecnologias":   [   
-                                                                {"nome":"JAVA","nivel":78},
-                                                                {"nome":"JPA","nivel":85},
-                                                                {"nome":"Hibernate","nivel":88}, 
-                                                                {"nome":"CDI","nivel":73},
-                                                                {"nome":"WildFly","nivel":82},
-                                                                {"nome":"TomCat","nivel":71},
-                                                                {"nome":"PostgreSQL","nivel":84},
-                                                                {"nome":"MySQL","nivel":83}
+                                                                {"nome":"JAVA","nivel":75},
+                                                                {"nome":"JPA","nivel":65},
+                                                                {"nome":"Hibernate","nivel":68}, 
+                                                                {"nome":"CDI","nivel":53},
+                                                                {"nome":"WildFly","nivel":62},
+                                                                {"nome":"TomCat","nivel":50},
+                                                                {"nome":"PostgreSQL","nivel":81},
+                                                                {"nome":"MySQL","nivel":80}
                                                             ]},
                 {"id":"3","nome":"ourtos","tecnologias":   [   
                                                                 {"nome":"Git","nivel":76},  
-                                                                {"nome":"MVC","nivel":86},
-                                                                {"nome":"IoT","nivel":81},
-                                                                {"nome":"ESP8266","nivel":92}, 
-                                                                {"nome":"Raspberry Pi","nivel":79},
-                                                                {"nome":"Ubuntu","nivel":91},
+                                                                {"nome":"MVC","nivel":70},
+                                                                {"nome":"IoT","nivel":80},
+                                                                {"nome":"ESP8266","nivel":89}, 
+                                                                {"nome":"Raspberry Pi","nivel":77},
+                                                                {"nome":"Ubuntu","nivel":86},
                                                                 {"nome":"Windows","nivel":95},
                                                                 {"nome":"Python","nivel":74},
                                                                 {"nome":"Linguagem C","nivel":83},
-                                                                {"nome":"PHP","nivel":87}
+                                                                {"nome":"PHP","nivel":77}
                                                             ]}
 
             ],
