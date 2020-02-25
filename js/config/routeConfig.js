@@ -25,6 +25,9 @@ angular.module("mygithub").config(function ($routeProvider) {
     $routeProvider.when("/profile", {
         templateUrl: "view/profile.html"
     });
+    $routeProvider.when("/github", {
+        templateUrl: "view/github.html"
+    });
     $routeProvider.when("/error", {
         templateUrl: "view/error.html"
     });

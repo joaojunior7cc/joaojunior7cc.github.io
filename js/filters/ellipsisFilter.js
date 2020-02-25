@@ -4,7 +4,7 @@
 angular.module("mygithub").filter("ellipsis",function () {
     return function (input,ini,size) {
         //Se o nome(input) for menor/igual, so retorno
-        if(input.length <= size) return input;
+        if(input.length === size || input.length === undefined) return input;
     /*                       default: if(false || 2)   */
         var output = input.substring(ini,(size || 2)) + "...";
         return output;

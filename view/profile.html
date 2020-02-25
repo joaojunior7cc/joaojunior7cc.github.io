@@ -18,7 +18,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
        
     <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="css/profile/pillar-1.css">
+    <link id="theme-style" rel="stylesheet" href="lib/profile/css/pillar-1.css">
 
 
 </head> 
@@ -115,7 +115,9 @@
 								        <li class="mb-2" ng-repeat="tecnologia in habilidade.tecnologias">
 								            <div class="resume-skill-name">{{tecnologia.nome}}</div>
 									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: {{tecnologia.nivel}}%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+												<!--abaixo estava assim: 
+													 class="progress-bar theme-progress-bar-dark" -->
+											    <div class="progress-bar " role="progressbar" style="background-color: #66cb8c ;width: {{tecnologia.nivel}}%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
 								        </li>
 								        
@@ -170,18 +172,13 @@
 								    <li class="mb-1">{{interesse.descricao}}</li>
 							    </ul>
 						    </div>
-					    </section><!--//interests-section-->
-					    
+					    </section><!--//interests-section-->					    
 				    </div>
 			    </div><!--//row-->
-		    </div><!--//resume-body-->
-		    
+		    </div><!--//resume-body-->    
 		    
 	    </div>
-    </article>  
-
-
-    
+    </article>      
 
 </body>
 </html> 

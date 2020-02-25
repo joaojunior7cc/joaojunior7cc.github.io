@@ -1,12 +1,11 @@
 
-<div class="single-page" >
-  <aside id="perfil" class="container d-flex align-items-center flex-column">
+  <aside id="perfil" class="single-page container d-flex align-items-center flex-column">
         <!-- Masthead Avatar Image -->
         <div id="img-perfil" class="mb-4">
-          <img  id="img-avatar" class="masthead-avatar p-4 pb-2" src=img/{{usuario.imgAvatar}} alt="" height="330" >
+          <img  id="img-avatar" class="p-4 pb-2" src=img/{{usuario.imgAvatar}} alt="" height="330" >
           <br>
           <hr class="bg-danger accent-2 mb-2 mt-0 d-inline-block mx-auto" style="width: 120px;">
-          <h1 id="nome-perfil" class="masthead-heading text-uppercase ">{{usuario.nome | name}}</h1>
+          <h1 id="nome-perfil" class=" ">{{usuario.nome | name}}</h1>
         </div>
  
 
@@ -28,9 +27,7 @@
     </div>   
 
     <div class="container m-4">
-      <!-- Masthead Subheading -->
-      <p class="masthead-subheading font-weight-light mb-0">{{usuario.profissao | name | ellipsis:0:20}} {{usuario.nivel | name}} - {{usuario.stack | name}} </p>
-      <p class="masthead-subheading font-weight-light mb-0">&lt;{{usuario.linguagens | name}}/&gt;</p>
+      <p class="">{{usuario.profissao | name }} {{usuario.nivel | name}} - {{usuario.stack | name}} </p>
+      <p class="">&lt;{{usuario.linguagens | name}}/&gt;</p>
     </div>     
   </aside>
-</div>

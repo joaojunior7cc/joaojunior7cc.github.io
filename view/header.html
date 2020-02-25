@@ -29,10 +29,20 @@
                     <li><a href="#!/sobre">Conhecer a Escola</a> </li>
                 </ul>
             </li>
-        </div>  
-        <div class="esp-left">
-            <input type="text" ng-model="corbh" name="nome" placeholder="Nome" />
-        </div>-->
+        </div>  -->
+        <div >
+            <!-- <input type="text" ng-model="corbh" placeholder="cor" />   -->
+            <a class="btn inline bg-danger p-3" href="" ng-model="corbh" ng-click="setCor('vermelha')"></a>    
+            <a class="btn inline bg-success p-3" href="" ng-model="corbh" ng-click="setCor('verde')"></a>      
+        </div>
+
+        <!-- <div class=" d-inline-flex pl-2">            
+            <select class="form-control " ng-model="usuario" ng-options=" usuario.id for usuario in usuarios">
+                <option value="">Selecione um usuario</option>
+            </select>
+            <button class="btn btn-primary btn-block ml-2" ng-click="setUser(usuario.id)" >OK</button>
+        </div> -->
+        
     </nav>
 
     <nav class="back-navbar back-navbar-{{corbh}} navbar navbar-default navbar-expand-md  fixed-top" ><!--  -->
@@ -55,6 +65,7 @@
                 <li class="list-group-item">
                     <a class="navbar-btn" href="#!/profile">Currículo</a>
                 </li>
+
                 <li class="list-group-item">
                     <a class="navbar-btn" href="#!/error"> Error </a>
                 </li>

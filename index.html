@@ -34,12 +34,18 @@
     <script src="js/directives/uiDateDirective.js"></script>
     <!-- <script src="js/directives/uiAccordionDirective.js"></script>  -->
     <script src="js/value/configValue.js"></script>
+    
+    <!-- git2 -->
+    <link type="text/css" rel="stylesheet" href="lib/github/css/style.css">
+    <!-- <link type="text/css" rel="stylesheet"  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" /> -->
+    <!-- <script  type="text/javascript" src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"  ></script> -->
+
 </head>
 <body ng-controller="homeJSONCtrl">
-
     <div ng-include="'view/header.html'"></div>
 
     <main class="masthead text-white text-center">  
+
         <div class="alerta" ng-if="err">
             <aside class="container d-flex align-items-center flex-column">            
                 <ui-alert title="Ops, Aconteceu um problema!"><!-- Como ja dito, tanto faz: uiAlert, uialert, ui-Alert, UIALERT-->
@@ -47,15 +53,31 @@
                     {{erro}}
                 </ui-alert>            
             </aside>
-          </div>        
+        </div>       
+
         <div ng-view></div>   
+
         <div ng-include="'view/competencias.html'"></div>
+
+        <!-- git 2 -->
+        <aside class="github">
+            <div class=" bag fixed">
+                <h1>Calendário de atividades do GitHub</h1>
+                <div class="calendar"></div>
+            </div>
+        </aside>
+
     </main>
 
     <div ng-include="'view/footer.html'"></div>
 
-    <script src="lib/jquery-3.4.1.min.js" integrity="" crossorigin="anonymous"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/jquery-3.4.1.min.js" integrity="" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="lib/fontawesome/js/all.min.js"></script>
+
+    <!-- github2 -->
+    <script src="lib/github/dist/github-calendar.min.js"></script>
+    <script src="lib/github/js/main.js"></script>
+    
 </body>
 </html>
