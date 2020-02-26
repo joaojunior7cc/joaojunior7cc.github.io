@@ -16,11 +16,11 @@
 angular.module("mygithub").config(function ($routeProvider) {
     $routeProvider.when("/perfil", {//definindo uma rota /usuarios
         templateUrl: "view/perfil.html",//eh quem ira ser renderizado quando fizer /usuarios
-        controller: "homeJSONCtrl"
+        controller: "homeCtrl"
     });
     $routeProvider.when("/competencias", {//definindo uma rota /usuarios
         templateUrl: "view/competencias.html",//eh quem ira ser renderizado quando fizer /usuarios
-        controller: "homeJSONCtrl"
+        controller: "homeCtrl"
     });
     $routeProvider.when("/curriculo", {
         templateUrl: "view/curriculo.html"

@@ -1,14 +1,14 @@
 <header>
   <nav class="topo-navbar-margin topo-navbar-cor-{{color}} navbar navbar-default navbar-expand-md fixed-top">
   </nav>
-  <div class="pos-f-t fixed-top">
-    <div class="collapse" id="navbarToggleExternalContent">
+  <div class="pos-f-t fixed-top">                         <!-- faz ocultar ele msm -->
+    <div class="collapse" id="navbarToggleExternalContent" data-toggle="collapse" data-target="#navbarToggleExternalContent">
       <div class="bg-dark p-4">
         <!-- <h5 class="text-white h4">Collapsed content</h5>
         <span class="text-muted">Toggleable via the navbar brand.</span> -->
         <div class="p-2 ml-auto ">          
           <!-- <input type="text" ng-model="corbh" placeholder="cor" />   -->
-          <a class="btn inline bg-success p-3 " ng-click="setCor('verde')"></a>        
+          <a class="btn inline bg-success p-3 " ng-click="setCor('verde')" ></a>        
           <a class="btn inline bg-primary p-3"  ng-click="setCor('azul')"></a> 
           <a class="btn inline bg-danger p-3 " ng-click="setCor('vermelho')"></a>
           <a class="btn inline bg-warning p-3 " ng-click="setCor('amarelo')"></a>
@@ -22,7 +22,7 @@
 
     <nav class="navbar navbar-dark bg-dark">
       <div class="container-fluid">
-        <div class=""> 
+        <div class="">                                  <!-- faz ocultar onabar expandido -->       
           <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>        
           </button>  

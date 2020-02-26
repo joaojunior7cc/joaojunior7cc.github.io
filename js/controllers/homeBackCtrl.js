@@ -1,5 +1,5 @@
 
-angular.module("mygithub").controller("homeBackCtrl",function ($scope,usuariosAPIService,serialGenerator) {
+angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPIService,serialGenerator) {
     $scope.usuarios = [];
     $scope.usuario = [];  
     //$scope.serial = "";

@@ -1,5 +1,5 @@
 
-angular.module("mygithub").controller("homeJSONCtrl",function ($scope,usuariosAPIService,serialGenerator) {
+angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPIService,serialGenerator) {
     $scope.usuarios = [];
     $scope.usuario = []; 
     $scope.userselect=0; // usuario padrao
