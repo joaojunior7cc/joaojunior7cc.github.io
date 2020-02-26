@@ -1,61 +1,40 @@
-<header class="container">    
-
-    <nav class="topo-navbar-margin topo-navbar-cor-{{color}} navbar navbar-default navbar-expand-md fixed-top">
-        <nav class="topo-navbar navbar navbar-default navbar-expand-md fixed-top navbar-dark ">
-            <div class="container-results">
-                <div id="btn-nome" class="navbar-header">
-                    <a  class="navbar-brand" href="#!/index.html">{{usuario.nome | name | ellipsis:0:11}}</a>
-                    <!-- <hr class="bg-danger mt-0 d-inline-block mx-auto" style="width: 10px;"> -->
-                </div>
-            </div>
-            <!-- <div>
-                <ul class="nav navbar-nav mr-auto">
-                    <li class="active">
-                        <a class="nav-link" href="https://github.com/joaojunior7cc/repositories">Repositórios</a>
-                    </li>
-                </ul>
-            </div> -->
-            <div >
-                <!-- <input type="text" ng-model="corbh" placeholder="cor" />   -->
-                <a class="btn inline bg-success p-3 " ng-click="setCor('verde')"></a>          
-                <a class="btn inline bg-primary p-3"  ng-click="setCor('azul')"></a> 
-                <a class="btn inline bg-danger p-3 " ng-click="setCor('vermelho')"></a>
-                <a class="btn inline bg-warning p-3 " ng-click="setCor('amarelo')"></a>
-            </div>
-            <div class="nav navbar-nav me-auto dropdown pl-2">
-                <li class="lista-sistema ">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Links<span class="caret"></span> </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="nnavbar-btn" href="https://github.com/joaojunior7cc/repositories">Repositórios</a></li>
-                        <li><a class="navbar-btn" href="#!/curriculo">Currículo</a>
-                        <li><a class="navbar-btn" href="#!/error"> Error </a>
-                    </ul>
-                </li>
-            </div>  
-
-
-            <!-- <div class=" d-inline-flex pl-2">            
-                <select class="form-control " ng-model="usuario" ng-options=" usuario.id for usuario in usuarios">
-                    <option value="">Selecione um usuario</option>
-                </select>
-                <button class="btn btn-primary btn-block ml-2" ng-click="setUser(usuario.id)" >OK</button>
-            </div> -->
-            
-        </nav>
-    </nav>  
-    
-    <!-- <nav class="barra-navbar navbar navbar-default navbar-expand-md  fixed-top " >
-            <ul class="list-group  nav pt-4">
-                <li class="list-group-item active">
-                    <a class="navbar-btn color0 m-auto" href="#!/perfil">HOME</a>
-                <li class="list-group-item">
-                    <a class="navbar-btn" href="#!/curriculo">Currículo</a>
-                </li>
-                <li class="list-group-item">
-                    <a class="navbar-btn" href="#!/error"> Error </a>
-                </li>
-            </ul>
+<header>
+  <nav class="topo-navbar-margin topo-navbar-cor-{{color}} navbar navbar-default navbar-expand-md fixed-top">
+  </nav>
+  <div class="pos-f-t fixed-top">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <!-- <h5 class="text-white h4">Collapsed content</h5>
+        <span class="text-muted">Toggleable via the navbar brand.</span> -->
+        <div class="p-2 ml-auto ">          
+          <!-- <input type="text" ng-model="corbh" placeholder="cor" />   -->
+          <a class="btn inline bg-success p-3 " ng-click="setCor('verde')"></a>        
+          <a class="btn inline bg-primary p-3"  ng-click="setCor('azul')"></a> 
+          <a class="btn inline bg-danger p-3 " ng-click="setCor('vermelho')"></a>
+          <a class="btn inline bg-warning p-3 " ng-click="setCor('amarelo')"></a>
         </div>
-    </nav> -->
-    
+        <ul class="nav navbar-nav pl-3">
+          <li><a class="navbar-btn" href="#!/curriculo">Currículo</a></li>
+          <li><a class="navbar-btn" href="#!/error"> Error </a></li>
+        </ul>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class=""> 
+          <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>        
+          </button>  
+          <a id="btn-nome" class="ml-3  navbar-brand" href="#!/index.html">{{usuario.nome | name | ellipsis:0:11}}</a>
+          <!-- <hr class="bg-danger mt-0 d-inline-block mx-auto" style="width: 10px;"> -->
+        </div>
+
+        <div class="">  
+          <a class="btn btn-outline-success" href="https://github.com/joaojunior7cc">My GitHub </a>
+          <a class="btn btn-outline-success" href="https://github.com/joaojunior7cc/repositories">Repositórios</a>
+        </div>  
+      </div>
+    </nav>
+  </div>
 </header>

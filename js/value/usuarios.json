@@ -26,9 +26,9 @@
                 {"id":"1","empresa":"IFCE","cargo":"Monitor","dataadmissao":"2015.2","datatermino":"2016.1","descricaofuncao":"Monitor da cadeira do S1 Fundamentos da Programação com a linguagem Python","cargahoraria":"256h"}
             ],
             "cursos":[
-                {"id":"3","empresa":"Udemy","nome":"Desenvolvimento Web Completo","dataincio":"2020.1","datatermino":"2020.2","descricaofuncao":"Desenvolvimento de Web Full Stack. Frontend: HTM5,CSS3,jQuey,Bootstrap,AJAX e JavaScript. Backend: PHP, Apache, PDO, MySQL, PostgreSQL ","cargahoraria":"120h"},
-                {"id":"3","empresa":"Udemy","nome":"Java Web","dataincio":"2019.2","datatermino":"2019.2","descricaofuncao":"Desenvolvimento de Web Full Stack. Frontend: HTM5,CSS3,jQuey,Bootstrap, AJAX e JavaScript. Backend: Java, JPS, CDI, Hibernate, MySQL, PostgreSQL e WildFly","cargahoraria":"120h"},
-                {"id":"2","empresa":"UTD","nome":"Web design","dataincio":"2019.2","datatermino":"2019.2","descricaofuncao":"Desenvolvimento de front-end (Web site) usando HTM5,CSS3,jQuey,Bootstrap e JavaScript","cargahoraria":"120h"},
+                {"id":"3","empresa":"Udemy","nome":"Desenvolvimento Web Completo","datainicio":"2020.1","datatermino":"2020.2","descricaofuncao":"Desenvolvimento de Web Full Stack. Frontend: HTM5,CSS3,jQuey,Bootstrap,AJAX e JavaScript. Backend: PHP, Apache, PDO, MySQL, PostgreSQL ","cargahoraria":"120h"},
+                {"id":"3","empresa":"Udemy","nome":"Java Web","datainicio":"2019.2","datatermino":"2019.2","descricaofuncao":"Desenvolvimento de Web Full Stack. Frontend: HTM5,CSS3,jQuey,Bootstrap, AJAX e JavaScript. Backend: Java, JPS, CDI, Hibernate, MySQL, PostgreSQL e WildFly","cargahoraria":"120h"},
+                {"id":"2","empresa":"UTD","nome":"Web design","datainicio":"2019.2","datatermino":"2019.2","descricaofuncao":"Desenvolvimento de front-end (Web site) usando HTM5,CSS3,jQuey,Bootstrap e JavaScript","cargahoraria":"120h"},
                 {"id":"1","empresa":"SENAC","nome":"Manutenção e Montagem de Computadores","dataincio":"2004.2","datatermino":"2004.2","descricaofuncao":"Especializaoção em manutenção e montagem de microcomputadores em geral","cargahoraria":"60h"}
             ],
             "habilidades":[

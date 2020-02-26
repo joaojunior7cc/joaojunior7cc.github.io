@@ -1,0 +1,37 @@
+<header>
+  <nav class="topo-navbar-margin topo-navbar-cor-{{color}} navbar navbar-default navbar-expand-md fixed-top">
+  </nav>
+  <div class="pos-f-t fixed-top">
+    <div class="collapse left" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <!-- <h5 class="text-white h4">Links úteis</h5>
+        <span class="text-muted">GitHub.</span> -->
+          <ul class="nav navbar-nav pl-3">
+            <li><a class="navbar-btn" href="#!/curriculo">Currículo</a>
+            <li><a class="navbar-btn" href="#!/error"> Error </a>
+            <li><a class="navbar-btn" href="https://github.com/joaojunior7cc"> GitHub </a>
+            <li><a class="nnavbar-btn" href="https://github.com/joaojunior7cc/repositories">Repositórios</a></li>
+          </ul>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">   
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>        
+        </button>     
+          <div class="">
+            <a id="btn-nome" class="navbar-brand" href="#!/index.html">{{usuario.nome | name | ellipsis:0:11}}</a>
+            <!-- <hr class="bg-danger mt-0 d-inline-block mx-auto" style="width: 10px;"> -->
+            
+            <!-- <input type="text" ng-model="corbh" placeholder="cor" />   -->
+            <a class="btn inline bg-success p-3 " ng-click="setCor('verde')"></a>          
+            <a class="btn inline bg-primary p-3"  ng-click="setCor('azul')"></a> 
+            <a class="btn inline bg-danger p-3 " ng-click="setCor('vermelho')"></a>
+            <a class="btn inline bg-warning p-3 " ng-click="setCor('amarelo')"></a>
+          </div>
+
+      </div>
+    </nav>
+
+  </div>
+</header>

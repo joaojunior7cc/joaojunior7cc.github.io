@@ -82,25 +82,24 @@ header #btn-nome{
   border-radius:48%;
   /* background-color: #255a8b4f; */
   background-image: linear-gradient(to bottom, #7ec98293, #255a8b4f,#255a8b44, #83c08693);
-  padding: 10px;
+  
 }
 header #btn-nome a{
   font-size: medium;
 }
-/*
-#btn-nome hr{
-  margin-left: 1px;
-}
-
-.lista-sistema{
-  padding: 0.9rem;
-} */
-header .topo-navbar-margin{  
+/* config header.html */
+/* header .topo-navbar-margin{  
   background-color: #7ec98293;
   border-radius: 30%;
   padding: 3.8rem;
   z-index: 2;
-
+} */
+/* config header2.html */
+header .topo-navbar-margin{  
+  background-color: #7ec98293;
+  border-radius: 30%;
+  padding: 3.5rem;
+  z-index: 2;
 }
 
 header .topo-navbar{  
@@ -137,6 +136,7 @@ header .topo-navbar-cor-rosa{
   background-color: #c42c7893;/* #472323c2; */
 }
 
+
 header .barra-navbar{
   display: inline-table;
   background-color:#3E4349;
@@ -154,8 +154,7 @@ header .barra-navbar{
 /* main *************************************************/
 
 /* perfil ***********/
-#perfil{
-}
+
 #perfil #container-img {
   background-color: #f5eeee;
   /* border-style: ridge; */
