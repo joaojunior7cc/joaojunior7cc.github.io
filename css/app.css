@@ -115,7 +115,7 @@ header .topo-navbar-cor-amarelo{
   background-color: #c9c87e93;/* #472323c2; */
 }
 header .topo-navbar-cor-verde{
-  background-color: #7ec98293;/* #472323c2; */
+  background-color: #1a721f93;/* #472323c2; */
 }
 header .topo-navbar-cor-azul{
   background-color: #2334c793;/* #472323c2; */
@@ -135,7 +135,12 @@ header .topo-navbar-cor-laranja{
 header .topo-navbar-cor-rosa{
   background-color: #c42c7893;/* #472323c2; */
 }
-
+header .topo-navbar-cor-cinza{
+  background-color: #4b4c5093;/* #472323c2; */
+}
+header .topo-navbar-cor-aqua{
+  background-color: #5ab6aa93;/* #472323c2; */
+}
 
 header .barra-navbar{
   display: inline-table;
