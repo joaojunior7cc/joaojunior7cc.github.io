@@ -3,9 +3,9 @@
 
   </nav>
   <div class="pos-f-t fixed-top">                         <!-- faz ocultar ele msm -->
-    <div class="collapse" id="navbarToggleExternalContent" data-toggle="collapse" data-target="#navbarToggleExternalContent">
+    <div class="collapse" id="navbarToggleExternalContent" >
       <div class="d-flex bg-dark">
-        <div class="ml-3">
+        <div class="ml-3" data-toggle="collapse" data-target="#navbarToggleExternalContent">
             <a class="btn btn-success p-2" ng-click="setCor('verde')" ></a>        
             <a class="btn btn-primary p-2"  ng-click="setCor('azul')"></a> 
             <a class="btn btn-danger p-2" ng-click="setCor('vermelho')"></a>
@@ -13,6 +13,13 @@
             <a class="btn btn-light p-2" ng-click="setCor('branco')"></a>
             <a class="btn btn-secondary p-2" ng-click="setCor('cinza')"></a>
             <a class="btn btn-info p-2" ng-click="setCor('aqua')"></a>
+        </div>
+        <div class="ml-auto d-flex h-50">
+          <select name="usersel" id="" ng-Model="usuario" ng-options="usuario.nome for usuario in usuarios">
+                  <option value="">Selecione um usuário</option>
+          </select>
+          <button class="btn btn-primary btn-block ml-auto" ng-click="setUser(usuario.id)"  >OK</button>
+        
         </div>
         <div class="ml-auto mr-2">          
           <a class="btn btn-success p-2" ng-click="setCor('verde')" ></a>        
@@ -46,12 +53,12 @@
       </div>
 
       <div class="d-md-inline-flex">
-          <div class=" input-group-append mt-2 mr-2" >
-            <div>
-              <a class="btn btn-light mb-0" href="#!/perfil">@</a>
+          <div class=" input-group-append mt-2 mr-1" >
+            <div class="btn-secondary rounded">
+              <a class="btn btn-secondary" href="#!/perfil">@</a>
             </div>
             <div class="dropdown">            
-              <button class=" btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button class=" btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 joaojunior7cc
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -60,6 +67,7 @@
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item active " href="#!/perfil">+ Home </a> 
                 <a class="dropdown-item" href="#!/curriculo">+ Currículo</a>
+                <a class="dropdown-item" href="#!/pagexterna">+ Pag Externa</a>
                 <a class="dropdown-item" href="#!/error">+ Error </a>
               </div>
             </div>

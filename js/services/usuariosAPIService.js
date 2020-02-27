@@ -1,10 +1,13 @@
 angular.module("mygithub").factory("usuariosAPIService",function ($http,configValue) {
 
+    var _getPagExtJSON = function () {
+        //console.log(configValue.baseUrlJSON+"/usuarios");
+        return $http.get("https://getbootstrap.com.br/");
+    };
     var _getUsuariosJSON = function () {
         //console.log(configValue.baseUrlJSON+"/usuarios");
         return $http.get(configValue.baseUrlJSON+"/usuarios.json");
-    };
-
+    }; 
     var _getUsuariosBack = function () {
         //console.log(configValue.baseUrlBack+"/usuarios");
         return $http.get(configValue.baseUrlBack+"/usuarios");
@@ -21,6 +24,7 @@ angular.module("mygithub").factory("usuariosAPIService",function ($http,configVa
     };
     
     return{
+        getPagExtJSON : _getPagExtJSON,
         getUsuariosJSON : _getUsuariosJSON,
         getUsuariosBack : _getUsuariosBack,
         saveUsuariosJSON : _saveUsuariosJSON,
