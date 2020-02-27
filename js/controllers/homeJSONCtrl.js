@@ -6,6 +6,7 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
     $scope.curriculos = [];
     $scope.curriculo = [];
     $scope.color = "verde";
+    $scope.textoletreiro = "Olá, seja bem-vindo...";
     
     console.log($scope.userselect);
 

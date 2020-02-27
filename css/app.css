@@ -3,15 +3,15 @@ body{
   padding-top: 85px;
   background-color: #fcfbf83a;
 }
-
-a,a:LINK, a:ACTIVE,a:VISITED{/*sub-classes*/
+/*sub-classes*/
+a,a:LINK, a:ACTIVE,a:VISITED{
 	text-decoration: none;
 	font-size: 15px; 
 }
-
-a:LINK{color: #3eff4893;}
-a:VISITED{color: rgb(177, 90, 90);}
-a:ACTIVE{color: rgb(245, 207, 136);}
+/* 3eff4893 */
+/* a:LINK{color: #ffffff;}
+a:VISITED{color: #ffffff}
+a:ACTIVE{color: #ffffff} */
 
 .footer {
   padding-top: 5rem;
@@ -78,7 +78,7 @@ header .topo-navbar,.topo-navbar-margin,#btn-header-nome{
   box-shadow: -2px 5px 24px  #1B1C1C, 9px 10px 2px rgba(0, 0, 0, 0.1);  
 }
 
-header #btn-nome{
+header #btn-logo{
   border-radius:48%;
   /* background-color: #255a8b4f; */
   background-image: linear-gradient(to bottom, #7ec98293, #255a8b4f,#255a8b44, #83c08693);
@@ -172,20 +172,17 @@ header .barra-navbar{
   max-width: 100%;
   height: auto;
 }
-#perfil a{
-  color: #052442;
-}
 
-#perfil h1{
-  background-color: rgba(13, 113, 219, 0.918);
-  font-size: 23px;
-  font-family: BlinkMacSystemFont;
+#perfil #btn-perfil{
+  /* background-color: rgba(13, 113, 219, 0.918); */
+  font-size: 20px;
+  /* font-family: Arial, Helvetica, sans-serif; */
   color: rgb(202, 198, 198);
   font-weight: bolder;
   text-transform: uppercase;
   /* text-shadow: 0px 1px #1B1C1C, 7px 10px 2px rgba(0, 0, 0, 0.2); */
-  padding-right: 1.1rem;
-  padding-left: 1.1rem;
+  padding-right: 0.1rem;
+  padding-left: 0.1rem;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
 }
@@ -195,15 +192,15 @@ header .barra-navbar{
 }
 
 #perfil p{
-  font-size: 16px;
-  font-family: BlinkMacSystemFont;
+  font-size: 19px;
+  /* font-family: Arial, Helvetica, sans-serif; */
   font-weight: bolder;
-  color: #ffee00;
+  color: #ffee00cc;
 }
 
-#perfil a{
+#perfil .btn-social{
   box-shadow: 0px 1px #1B1C1C, 7px 10px 2px rgba(0, 0, 0, 0.2);
-  background-color:rgba(152, 158, 160, 0.918);
+  /* background-color:rgba(152, 158, 160, 0.918); */
   color: rgb(202, 198, 198);
 }
 
@@ -236,7 +233,10 @@ footer hr {
 #curriculo{
   word-wrap: break-word;/*nao deixa o texto sair da div*/  
 }
-
+#curriculo article{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
 #curriculo header .container-img{
   background-color: #f5eeee;
   border-radius: 10%;
@@ -247,7 +247,7 @@ footer hr {
 }
 #curriculo .resumo{
   background-color: rgb(175, 175, 175);
- color: #052442;
+  color: #052442;
 }
 #curriculo article{
   background-color: #ffffff; 
@@ -257,7 +257,7 @@ footer hr {
   font-family: inherit;
   color: #434E5E;
 }
-#curriculo h2{
+#curriculo article h3{
   border-bottom: 1px solid #434E5E;
 }
 #curriculo #col-lateral{
