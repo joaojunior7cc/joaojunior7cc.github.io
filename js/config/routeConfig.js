@@ -24,11 +24,6 @@ angular.module("mygithub").config(function ($routeProvider) {
         templateUrl: "view/curriculo.html",
         // controller: "homeCtrl"
     });    
-    $routeProvider.when("/pagexterna", {//definindo uma rota 
-        templateUrl: "view/pagexterna.html",//eh quem ira ser renderizado quando fizer /
-        controller: "pagExtCtrl"
-    });
-
 
     $routeProvider.when("/github", {/* mantida so para teste (esta dando erro quando exibida por view) */
         templateUrl: "view/github.html"

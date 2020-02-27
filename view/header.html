@@ -36,7 +36,7 @@
     <nav class="d-flex navbar navbar-dark bg-dark">
       
       <div class="d-flex mt-2">                                   
-        <a id="btn-logo" class="navbar-brand p-2" href="" data-toggle="collapse" data-target="#navbarToggleExternalContent">{{usuario.nome | name | ellipsis:0:11}}</a>
+        <a id="btn-logo" class="navbar-brand p-2" href="#!/perfil" >{{usuario.nome | name | ellipsis:0:11}}</a>
         
         <!-- <div class=" input-group-append  mr-2">
           <div class="dropdown">            
@@ -55,7 +55,7 @@
       <div class="d-md-inline-flex">
           <div class=" input-group-append mt-2 mr-1" >
             <div class="btn-secondary rounded">
-              <a class="btn btn-secondary" href="#!/perfil">@</a>
+              <a class="btn btn-secondary" href=""data-toggle="collapse" data-target="#navbarToggleExternalContent">@</a>
             </div>
             <div class="dropdown">            
               <button class=" btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -67,7 +67,6 @@
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item active " href="#!/perfil">+ Home </a> 
                 <a class="dropdown-item" href="#!/curriculo">+ Currículo</a>
-                <a class="dropdown-item" href="#!/pagexterna">+ Pag Externa</a>
                 <a class="dropdown-item" href="#!/error">+ Error </a>
               </div>
             </div>
