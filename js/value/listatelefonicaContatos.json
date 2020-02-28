@@ -1,0 +1,7 @@
+{  
+    "contatos" : [
+        {"id": 1, "nome": "bruno Da silva", "telefone": "9999-2222", "operadora": "oi","serial":"000000000000", "data": "22/02/2020"},
+        {"id": 2, "nome": "SANDRA DE MELO", "telefone": "9999-3333", "operadora": "TIM","serial":"111111111111", "data": "22/02/2020"},
+        {"id": 3, "nome": "mARIANA dO bRAZ", "telefone": "9999-9999", "operadora": "VIVO","serial":"222222222222", "data": "22/02/2020"}
+    ]
+}

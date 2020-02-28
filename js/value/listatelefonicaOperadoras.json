@@ -1,0 +1,9 @@
+{
+    "operadoras" : [
+        {"nome": "Oi", "codigo": 14, "categoria": "Celular", "preco": 2, "cor": "cores[81]"},
+        {"nome": "Vivo", "codigo": 15, "categoria": "Celular", "preco": 5,"cor": "cores[180]"},
+        {"nome": "Tim", "codigo": 41, "categoria": "Celular", "preco": 3,"cor":"cores[192]"},
+        {"nome": "GVT", "codigo": 25, "categoria": "Fixo", "preco": 5,"cor": "cores[102]"},
+        {"nome": "Embratel", "codigo": 21, "categoria": "Fixo", "preco": 5,"cor": "cores[196]"}
+    ]
+}
