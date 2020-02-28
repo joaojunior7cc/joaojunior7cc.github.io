@@ -22,7 +22,7 @@
 					</div>
 					<div class="col-md-4 m-3">
 						<ul class=" list-unstyled">
-							<li class="mb-3"><a href="#"><span class="fa-container text-center mr-2"><i class="fab fa-linkedin-in fa-fw"></i></span>linkedin.com/in/stevedoe</a></li>
+							<li class="mb-3"><a href="#"><span class="fa-container text-center mr-2"><i class="fab fa-linkedin-in fa-fw"></i></span>linkedin.com/in/username</a></li>
 							<li class="mb-3"><a href="#"><span class="fa-container text-center mr-2"><i class="fab fa-github-alt fa-fw"></i></span>github.com/username</a></li>
 							<li class="mb-3"><a href="#"><span class="fa-container text-center mr-2"><i class="fab fa-codepen fa-fw"></i></span>codepen.io/username/</a></li>
 							<li><a href="#"><span class="fa-container text-center mr-2"><i class="fas fa-globe"></i></span>yourwebsite.com</a></li>
@@ -97,7 +97,29 @@
                     </div>
                 </section>
 
+                <section class="text-left mb-5">
+                    <h3 class=" text-uppercase font-weight-bold pb-3 mb-3 ">Minicursos</h3>
+                    <div class="">
+                        <div class="position-relative" ng-repeat="curso in curriculo.minicursos" >		
+                            
+                            <article class=" position-relative">                                
+                                <div class=" mb-2">
+                                    <div class="d-flex flex-column flex-md-row  pt-4">
+                                        <h4 class=" font-weight-bold mb-1">{{curso.nome | name}}</h4>
+                                        <div class=" ml-auto">{{curso.autor | name}}</div>
+                                    </div>
+                                    <div class="">{{curso.datainicio}} - {{curso.datatermino}}</div>
 
+                                    <div class=" ml-auto">{{curso.cargahoraria | name}}</div>
+                                </div>
+									<div class="resume-timeline-item-desc">
+										<p>{{curso.tecnologias}}</p>												
+                                </div>
+
+                            </article>
+                        </div>
+                    </div>
+                </section>
 
                 <section class="text-left mb-4">
                     <h3 class=" text-uppercase font-weight-bold pb-3 mb-3 ">Experiências extras</h3>

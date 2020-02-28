@@ -24,9 +24,11 @@
                 {"id":"2","empresa":"Sono Profundo","cargo":"Volutário? Nunca","dataadmissao":"2016.2","datatermino":"2090.2","descricaofuncao":"Dormir eternamente","cargahoraria":"∞"}
             ],
             "cursos":[
-                {"id":"1","empresa":"Sonifero","nome":"Profissional do sono","dataincio":"∞","datatermino":"Dormir eternamente","descricaofuncao":"Tem coisa melhor que dirmir?","cargahoraria":"∞"}
+                {"id":"1","empresa":"Sonifero","nome":"Profissional do sono","datainicio":"∞","datatermino":"∞","descricaofuncao":"Tem coisa melhor que dirmir?","cargahoraria":"∞"}
             ],
-            "habilidades":[
+            "minicursos":[
+                {"id":"1","autor":"ZzZzzzZZz","nome":"Ronco","datainicio":"2020.1","datatermino":"2020.1","cargahoraria":"1.3h","tecnologias":"Cama, Traveseiro, lençol"}
+            ],"habilidades":[
 
                 {"id":"1","nome":"frontend","tecnologias":  [   
                                                                 {"nome":"HTML5","nivel":68},
@@ -80,10 +82,17 @@
                 {"id":"1","empresa":"IFCE","cargo":"Monitor","dataadmissao":"2015.2","datatermino":"2016.1","descricaofuncao":"Monitor da cadeira do S1 Fundamentos da Programação com a linguagem Python","cargahoraria":"256h"}
             ],
             "cursos":[
-                {"id":"3","empresa":"Udemy","nome":"Desenvolvimento Web Completo","datainicio":"2020.1","datatermino":"2020.2","descricaofuncao":"Desenvolvimento de Web Full Stack. Frontend: HTM5, CSS3, jQuey, Bootstrap, AJAX e JavaScript. Backend: PHP, Apache, PDO, MySQL, PostgreSQL ","cargahoraria":"120h"},
-                {"id":"3","empresa":"Udemy","nome":"Java Web","datainicio":"2019.2","datatermino":"2019.2","descricaofuncao":"Desenvolvimento de Web Full Stack. Frontend: HTM5, CSS3, jQuey, Bootstrap, AJAX e JavaScript. Backend: Java, JPS, CDI, Hibernate, MySQL, PostgreSQL e WildFly","cargahoraria":"120h"},
-                {"id":"2","empresa":"UTD","nome":"Web design","datainicio":"2019.2","datatermino":"2019.2","descricaofuncao":"Desenvolvimento de front-end (Web site) usando HTM5, CSS3, jQuey, Bootstrap e JavaScript","cargahoraria":"120h"},
-                {"id":"1","empresa":"SENAC","nome":"Manutenção e Montagem de Computadores","dataincio":"2004.2","datatermino":"2004.2","descricaofuncao":"Especializaoção em manutenção e montagem de microcomputadores em geral","cargahoraria":"60h"}
+                {"id":"4","empresa":"Udemy","nome":"Desenvolvimento Web Completo","datainicio":"2020.1","datatermino":"2020.2","descricaofuncao":"Desenvolvimento de Web Full Stack. Frontend: HTM5, CSS3, jQuey, Bootstrap, AJAX e JavaScript. Backend: PHP, Apache, PDO, MySQL, PostgreSQL ","cargahoraria":"120h"},
+                {"id":"3","empresa":"Udemy","nome":"Java Web","datainicio":"2019.2","datatermino":"2019.2","cargahoraria":"120h","descricaofuncao":"Desenvolvimento de Web Full Stack. Frontend: HTM5, CSS3, jQuey, Bootstrap, AJAX e JavaScript. Backend: Java, JPS, CDI, Hibernate, MySQL, PostgreSQL e WildFly"},
+                {"id":"2","empresa":"UTD","nome":"Web design","datainicio":"2019.2","datatermino":"2019.2","cargahoraria":"120h","descricaofuncao":"Desenvolvimento de front-end (Web site) usando HTM5, CSS3, jQuey, Bootstrap e JavaScript"},
+                {"id":"1","empresa":"SENAC","nome":"Manutenção e Montagem de Computadores","dataincio":"2004.2","datatermino":"2004.2","cargahoraria":"600h","descricaofuncao":"Especializaoção em manutenção e montagem de microcomputadores em geral"}
+            ],
+            "minicursos":[
+                {"id":"5","autor":"Rodrigo Branas","nome":"Bower","datainicio":"2020.1","datatermino":"2020.1","cargahoraria":"0.5h","tecnologias":"Bower, JavaScript, VSCode"},
+                {"id":"4","autor":"Rodrigo Branas","nome":"AngularJS","datainicio":"2020.1","datatermino":"2020.1","cargahoraria":"8h","tecnologias":"AngularJS, Bootstrap 3, Nodejs, Javascript, VSCode"},
+                {"id":"3","autor":"Rodrigo Branas","nome":"Nodejs","datainicio":"2020.1","datatermino":"2020.1","cargahoraria":"3.6h","tecnologias":"Nodejs, JavaScript, Terminal Linux"},
+                {"id":"2","autor":"Rodrigo Branas","nome":"JavaScript","datainicio":"2020.1","datatermino":"2020.1","cargahoraria":"4.5h","tecnologias":"JavaScript, Nodejs, Terminal Linux, VSCode"},
+                {"id":"1","autor":"Rodrigo Branas","nome":"Git","datainicio":"2020.1","datatermino":"2020.1","cargahoraria":"1.3h","tecnologias":"Git, GitHub, Terminal Linux"}
             ],
             "habilidades":[
 
