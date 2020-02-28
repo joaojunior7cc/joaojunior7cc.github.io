@@ -5,6 +5,60 @@
     ],
     "curriculos":[
         {
+            "idusuario":"0",
+            "resumo":"Estudando com muito sono kkk...",
+            
+            "formacoes":[
+                {"id":"1","descricao":"Ciência da Computação","datainicio":"2014.2","datatermino":"2021.1","instituicao":"IFCE Maracanaú","semestreatual":"7! semestre"}
+            ],
+            "experiencias":[
+
+                {"id":"1","empresa":"faculdade flf","cargo":"suporte","subcargo":"menino do computador","dataadmissao":"2018","datademissao":"2019","descricaofuncao":"Consertar impressora, ajudar com excel kkk.","tecnologias":["PC","Impressora","projetor"]}
+
+            ],
+            "premios":[
+                {"id":"0","nome":"MoveIT-IFCE","descricao":"Vencedor do Hackathon APM terminals 2019 com a equipe J3","datainicio":"2019.1","datatermino":"2019.1","cargahorario":"48h"}
+                
+            ],
+            "extras":[
+                {"id":"2","empresa":"Sono Profundo","cargo":"Volutário? Nunca","dataadmissao":"2016.2","datatermino":"2090.2","descricaofuncao":"Dormir eternamente","cargahoraria":"∞"}
+            ],
+            "cursos":[
+                {"id":"1","empresa":"Sonifero","nome":"Profissional do sono","dataincio":"∞","datatermino":"Dormir eternamente","descricaofuncao":"Tem coisa melhor que dirmir?","cargahoraria":"∞"}
+            ],
+            "habilidades":[
+
+                {"id":"1","nome":"frontend","tecnologias":  [   
+                                                                {"nome":"HTML5","nivel":68},
+                                                                {"nome":"CSS3","nivel":55},
+                                                                {"nome":"JavaScript","nivel":38}, 
+                                                                {"nome":"Bootstrap","nivel":53}
+                                                            ]},
+                {"id":"2","nome":"backend","tecnologias":   [   
+                                                                {"nome":"JAVA","nivel":58},
+                                                                {"nome":"PostgreSQL","nivel":34}
+                                                            ]},
+                {"id":"3","nome":"ourtos","tecnologias":   [   
+                                                                {"nome":"Git","nivel":66},
+                                                                {"nome":"Ubuntu","nivel":41},
+                                                                {"nome":"Windows","nivel":75},
+                                                                {"nome":"Python","nivel":64},
+                                                                {"nome":"Linguagem C","nivel":53},
+                                                                {"nome":"PHP","nivel":17}
+                                                            ]}
+
+            ],
+            "idiomas":[
+                {"id":"1","descricao":"português","status":"nativo","nivel":89},
+                {"id":"2","descricao":"inglês","status":"médio","nivel":49}                
+            ],
+            "interesses":[
+                {"id":"1","descricao":"Programação Web"},
+                {"id":"2","descricao":"Design"},
+                {"id":"3","descricao":"Banco de dados"}
+            ]
+        },
+        {
             "idusuario":"1",
             "resumo":"Resuma sua carreira aqui...",
             
@@ -74,60 +128,7 @@
                 {"id":"1","descricao":"Programação Web"},
                 {"id":"3","descricao":"Banco de dados"}
             ]
-        },
-        {
-            "idusuario":"2",
-            "resumo":"Estudando com muito sono kkk...",
-            
-            "formacoes":[
-                {"id":"1","descricao":"Ciência da Computação","datainicio":"2014.2","datatermino":"2021.1","instituicao":"IFCE Maracanaú","semestreatual":"7! semestre"}
-            ],
-            "experiencias":[
-
-                {"id":"1","empresa":"faculdade flf","cargo":"suporte","subcargo":"menino do computador","dataadmissao":"2018","datademissao":"2019","descricaofuncao":"Consertar impressora, ajudar com excel kkk.","tecnologias":["PC","Impressora","projetor"]}
-
-            ],
-            "premios":[
-                {"id":"0","nome":"MoveIT-IFCE","descricao":"Vencedor do Hackathon APM terminals 2019 com a equipe J3","datainicio":"2019.1","datatermino":"2019.1","cargahorario":"48h"}
-                
-            ],
-            "extras":[
-                {"id":"2","empresa":"Sono Profundo","cargo":"Volutário? Nunca","dataadmissao":"2016.2","datatermino":"2090.2","descricaofuncao":"Dormir eternamente","cargahoraria":"∞"}
-            ],
-            "cursos":[
-                {"id":"1","empresa":"Sonifero","nome":"Profissional do sono","dataincio":"∞","datatermino":"Dormir eternamente","descricaofuncao":"Tem coisa melhor que dirmir?","cargahoraria":"∞"}
-            ],
-            "habilidades":[
-
-                {"id":"1","nome":"frontend","tecnologias":  [   
-                                                                {"nome":"HTML5","nivel":68},
-                                                                {"nome":"CSS3","nivel":55},
-                                                                {"nome":"JavaScript","nivel":38}, 
-                                                                {"nome":"Bootstrap","nivel":53}
-                                                            ]},
-                {"id":"2","nome":"backend","tecnologias":   [   
-                                                                {"nome":"JAVA","nivel":58},
-                                                                {"nome":"PostgreSQL","nivel":34}
-                                                            ]},
-                {"id":"3","nome":"ourtos","tecnologias":   [   
-                                                                {"nome":"Git","nivel":66},
-                                                                {"nome":"Ubuntu","nivel":41},
-                                                                {"nome":"Windows","nivel":75},
-                                                                {"nome":"Python","nivel":64},
-                                                                {"nome":"Linguagem C","nivel":53},
-                                                                {"nome":"PHP","nivel":17}
-                                                            ]}
-
-            ],
-            "idiomas":[
-                {"id":"1","descricao":"português","status":"nativo","nivel":89},
-                {"id":"2","descricao":"inglês","status":"médio","nivel":49}                
-            ],
-            "interesses":[
-                {"id":"1","descricao":"Programação Web"},
-                {"id":"2","descricao":"Design"},
-                {"id":"3","descricao":"Banco de dados"}
-            ]
         }
+ 
     ]
 }
