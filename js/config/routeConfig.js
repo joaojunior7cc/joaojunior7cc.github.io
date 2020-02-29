@@ -24,7 +24,10 @@ angular.module("mygithub").config(function ($routeProvider) {
         templateUrl: "view/curriculo.html",
         // controller: "homeCtrl"
     });    
-
+    $routeProvider.when("/cursos", {
+        templateUrl: "view/menucursos.html",
+        // controller: "homeCtrl"
+    }); 
     $routeProvider.when("/github", {/* mantida so para teste (esta dando erro quando exibida por view) */
         templateUrl: "view/github.html"
     });

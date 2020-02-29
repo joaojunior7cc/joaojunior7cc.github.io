@@ -27,10 +27,8 @@ a:ACTIVE{color: #ffffff} */
       perfil.html:  #perdil
 
   Casos especificos como o header:
-    Nao faria sentido cria um id header para um arquivo header.html,
-    ainda com uma tag container principal se chamando header!
-    sol.: incovar a tag header diretamente aqui:
-      header
+    criar um id="header":
+      #header
 
   OBS 2: Padrao de boa partica usado:
     1- chamar sempre primeiro o id do arquivo.html!
@@ -74,17 +72,17 @@ a:ACTIVE{color: #ffffff} */
 /* header {
   box-shadow: -2px 5px 24px  #1B1C1C, 9px 19px 2px rgba(0, 0, 0, 0.1);
 } */
-header .topo-navbar,.topo-navbar-margin,#btn-header-nome{
+#header .topo-navbar,.topo-navbar-margin,#btn-header-nome{
   box-shadow: -2px 5px 24px  #1B1C1C, 9px 10px 2px rgba(0, 0, 0, 0.1);  
 }
 
-header #btn-logo{
+#header #btn-logo{
   border-radius:48%;
   /* background-color: #255a8b4f; */
   background-image: linear-gradient(to bottom, #7ec98293, #255a8b4f,#255a8b44, #83c08693);
   
 }
-header #btn-nome a{
+#header #btn-nome a{
   font-size: medium;
 }
 /* config header.html */
@@ -95,54 +93,54 @@ header #btn-nome a{
   z-index: 2;
 } */
 /* config header2.html */
-header .topo-navbar-margin{  
+#header .topo-navbar-margin{  
   background-color: #7ec98293;
   border-radius: 30%;
   padding: 2.6rem;
   z-index: 2;
 }
 
-header .topo-navbar{  
+#header .topo-navbar{  
   background-color: rgb(62, 67, 73);
   padding: 15px;
   z-index: 2;
 } 
 
-header .topo-navbar-cor-branco{
+#header .topo-navbar-cor-branco{
   background-color: #ffffff93;/* #472323c2; */
 }
-header .topo-navbar-cor-amarelo{
+#header .topo-navbar-cor-amarelo{
   background-color: #c9c87e93;/* #472323c2; */
 }
-header .topo-navbar-cor-verde{
+#header .topo-navbar-cor-verde{
   background-color: #1a721f93;/* #472323c2; */
 }
-header .topo-navbar-cor-azul{
+#header .topo-navbar-cor-azul{
   background-color: #2334c793;/* #472323c2; */
 }
-header .topo-navbar-cor-vermelho{
+#header .topo-navbar-cor-vermelho{
   background-color: #c0121293;/* #472323c2; */
 }
-header .topo-navbar-cor-preto{
+#header .topo-navbar-cor-preto{
   background-color: #02020293;/* #472323c2; */
 }
-header .topo-navbar-cor-branco{
+#header .topo-navbar-cor-branco{
   background-color: #ffffff93;/* #472323c2; */
 }
-header .topo-navbar-cor-laranja{
+#header .topo-navbar-cor-laranja{
   background-color: #c9b17e93;/* #472323c2; */
 }
-header .topo-navbar-cor-rosa{
+#header .topo-navbar-cor-rosa{
   background-color: #c42c7893;/* #472323c2; */
 }
-header .topo-navbar-cor-cinza{
+#header .topo-navbar-cor-cinza{
   background-color: #4b4c5093;/* #472323c2; */
 }
-header .topo-navbar-cor-aqua{
+#header .topo-navbar-cor-aqua{
   background-color: #5ab6aa93;/* #472323c2; */
 }
 
-header .barra-navbar{
+/* #header .barra-navbar{
   display: inline-table;
   background-color:#3E4349;
   margin-top: 98px;
@@ -154,7 +152,7 @@ header .barra-navbar{
   max-width: 110px ;
   max-height: 225px;
   z-index: 1;
-}
+} */
 
 /* main *************************************************/
 
@@ -210,15 +208,17 @@ header .barra-navbar{
 }
 
 /* competencias ****************************************************/
-#competencias{
+#competencias {
   background-color: #152b42;/* #2e2d26be; #0b2642ef; rgba(0, 0, 0, 0.473) */
+}
+#competencias .bgaccordion{
+  background-color: #ffffff;/* #2e2d26be; #0b2642ef; rgba(0, 0, 0, 0.473) */
 }
 #competencias{
   padding-top: 40px;
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 55px;
-  color: #052442;
 }
 #competencias h3{
   color:rgb(177, 138, 87);
@@ -269,4 +269,19 @@ footer hr {
   background-color: #f0f0f0;
   color: #434E5E;
   text-align: left;
+}
+
+/* MenuCursos */
+#menucursos .bgaccordion{
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: rgb(134, 102, 60);
+  background-color: white;
+}
+#menucursos h2{
+  color: #f5eeee;
 }
