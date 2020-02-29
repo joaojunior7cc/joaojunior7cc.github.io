@@ -28,6 +28,24 @@ angular.module("mygithub").config(function ($routeProvider) {
         templateUrl: "view/menucursos.html",
         // controller: "homeCtrl"
     }); 
+    $routeProvider.when("/angularjs", {
+        templateUrl: "view/cursos/angularjs/contatos.html",
+        // controller: "listaTelefonicaCtrl",
+        // resolve: {
+        //     contatos: function (contatosAPI) {
+        //         return contatosAPI.getContatosJSON();
+        //     }
+        // }
+    }); 
+    $routeProvider.when("/angularjs/contatonovo", {
+        templateUrl: "view/cursos/angularjs/contatoNovo.html",
+        // controller: "listaTelefonicaCtrl",
+        // resolve: {
+        //     contatos: function (contatosAPI) {
+        //         return contatosAPI.getContatosJSON();
+        //     }
+        // }
+    }); 
     $routeProvider.when("/github", {/* mantida so para teste (esta dando erro quando exibida por view) */
         templateUrl: "view/github.html"
     });

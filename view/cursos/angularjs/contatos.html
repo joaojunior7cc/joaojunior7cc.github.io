@@ -1,0 +1,69 @@
+
+
+<div ng-include="'view/cursos/angularjs/titulo.html'"></div>
+
+<div class=" contatos jumbotron">
+    <!--aula 12:  O Controller permite a definição de uma API que pode sercomparilhadas com outras diretivas -->
+    <div class="">
+        <ui-accordions class="container  mx-auto">
+            <ui-accordion title = "Curso de AngularJS">
+                <p>+ Ótimo mincurso de 8h com muita informção sobre AngularJs!</p>
+                <p>+ OBS: O GitHub permite apenas o serviço de hospedagem de Front-end.</p> 
+                <p>+ Por conta disso esse App nao poderá executar tarefas como POST e UPDATE,</p>
+                <p>ja que os dados aqui mantido são estáticos (JSON), </p>
+                <p>ficando aqui apenas exemplifiado a execução do GET.</p>
+            </ui-accordion>
+        </ui-accordions>
+        <!--AULA 10 - DIRETIVA uiAlert foi criada:
+                    pasta: css          ui.css
+                    pasta: view         alert.html (template)
+                    pasta: directives   uiAlertDirective.js-->
+        <!--ANTES DO TRANSCLUDE, QDO USAVA A PROPRIEDADE SCOPO NA DIRETIVA!!!
+            Esse title sera vinculado a uma propriedade do scope da diretiva ui-alert; passagem por parametro
+            <ui-alert title="Ops, Aconteceu um problema!" message="error"></ui-alert-->
+
+        <ui-alert title="Ops, Aconteceu um problema!" ng-if="err">
+            <!--TRANSCLUDE {{$id}}=4 e nao eh isolado do 2, ou seja, ele herda as propriedades do acima, o {{$id}}=2!-->
+            {{error}}
+        </ui-alert>
+    </div>
+    <div class="table-responsive-md">
+        <!--REUSO ui-alert title="JOÃO JÚNIOR!" message="error">
+            AUTOR XP
+        </ui-alert-->
+        <input class="top20px form-control" type="text" ng-model="criterioDeBusca" placeholder="Buscar: Digite aqui...">
+
+        <table ng-show="contatos.length>0" class="top20px table">
+            <tr><!--tr: row-->
+                <th></th>
+                <th><a href="" ng-click="ordenarPor('serial')"      >Serial</a></th>
+                <th><a href="" ng-click="ordenarPor('nome')"        >Nome</a></th><!--th: header-->
+                <th><a href="" ng-click="ordenarPor('telefone')"    >Telefone</a></th>
+                <th><a href="" ng-click="ordenarPor('operadore')"   >Operadora</a></th>
+                <th><a href="" ng-click="ordenarPor('data')"        >Data</a></th>
+                <th></th>
+            </tr>
+
+            <!--                  so eh colocado: true    -->
+            <tr ng-class="{'selecionado negrito': contato.selecionado}" ng-repeat="contato in contatos | limitTo:20 | filter:criterioDeBusca | orderBy:criterioDeOrdenacao:direcaoDaOrdenacao">
+                <!------------------------------------------------------------------------------------limitTo na array-->
+                <td><input type="checkbox" ng-model="contato.selecionado"></td>
+                <!------------------limitTo na string-->
+                <td>{{contato.serial | ellipsis:0:4}}</td><!--aula 09-->
+                <td><a href="#/detalhesContato/{{contato.id}}">{{contato.nome | name }}</a></td><!--aula 09, aula 14-->
+                <td>{{contato.telefone}}</td>
+                <td>
+                    <div ng-class="'negrito center'" style="width: 90px; " ng-style="{'background-color':contato.operadora.cor.base16}">
+                        {{contato.operadora | lowercase | ellipsis:0:8}}
+                    </div>
+                </td>
+                <td>{{contato.data | date:'dd/MM/yyyy HH:mm'}}</td>
+
+                <!--td style="width: 5px; heigth:5px" ng-style="{'background-color':contato.operadora.cor.base16}"></td-->
+            </tr>
+        </table>
+        </hr>
+        <button class="btn btn-danger btn-block" ng-click="apagarContatos(contatos)" ng-if="isContatoSelecionado(contatos)" >Apagar Contatos</button>
+        <a class="btn btn-primary btn-block" href="#!/angularjs/contatonovo">Novo contato</a>
+    </div>
+</div>

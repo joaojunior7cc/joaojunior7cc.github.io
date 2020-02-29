@@ -211,9 +211,7 @@ a:ACTIVE{color: #ffffff} */
 #competencias {
   background-color: #152b42;/* #2e2d26be; #0b2642ef; rgba(0, 0, 0, 0.473) */
 }
-#competencias .bgaccordion{
-  background-color: #ffffff;/* #2e2d26be; #0b2642ef; rgba(0, 0, 0, 0.473) */
-}
+
 #competencias{
   padding-top: 40px;
   padding-left: 60px;
@@ -272,16 +270,15 @@ footer hr {
 }
 
 /* MenuCursos */
-#menucursos .bgaccordion{
+#menucursos {
   margin-top: 10px;
   margin-left: 30px;
   margin-right: 30px;
   margin-bottom: 10px;
   padding-left: 30px;
   padding-right: 30px;
-  color: rgb(134, 102, 60);
-  background-color: white;
+  color: rgb(8, 8, 8);
 }
 #menucursos h2{
-  color: #f5eeee;
+  color: #050505;
 }

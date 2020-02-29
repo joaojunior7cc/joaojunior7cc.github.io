@@ -1,0 +1,45 @@
+<div ng-include="'view/cursos/angularjs/titulo.html'"></div>
+<div class="contatos jumbotron">
+    <ui-accordions class="container  mx-auto">
+        <ui-accordion title = "Curso de AngularJS">
+            <p>+ Ótimo mincurso de 8h com muita informção sobre AngularJs!</p>
+            <p>+ OBS: O GitHub permite apenas o serviço de hospedagem de Front-end.</p> 
+            <p>+ Por conta disso esse App nao poderá executar tarefas como POST e UPDATE,</p>
+            <p>ja que os dados aqui mantido são estáticos (JSON), </p>
+            <p>ficando aqui apenas exemplifiado a execução do GET.</p>
+        </ui-accordion>
+    </ui-accordions>
+    <a class="btn btn-primary btn-block" href="#!/angularjs">Lista Telefônica</a>
+    <form name="contatoForm" class="top20px">
+        <input class="top10px form-control" type="text" ng-model="contato.nome" name="name" placeholder="Nome*" ng-required="true" ng-minlength="10">
+        <!--  faz tipo um switch: $error. -->
+        <div ng-messages="contatoForm.name.$dirty && contatoForm.name.$error">
+            <div ng-message="required"  class="alert alert-danger">
+                *Nome é obrigatório
+            </div>
+            <div ng-message="minlength"  class="alert alert-danger">
+                *Mínimo de 10 caracteres
+            </div>
+        </div>
+        <!--aula 11-->
+        <input class="top10px form-control" type="text" ng-model="contato.telefone" name="phone" placeholder="Telefone*" ui-phone ng-required="true" ng-minlength="13">
+        <div ng-show="contatoForm.phone.$dirty && contatoForm.phone.$invalid" class="alert alert-danger">
+            *Telefone é obrigatório
+        </div>
+        <!--aula 11-->
+        <input class="top10px form-control" type="text" ng-model="contato.data" name="date" placeholder="Data*" ui-date ng-required="true" ng-minlength="1">
+        <div ng-show="contatoForm.date.$dirty && contatoForm.date.$invalid" class="alert alert-danger">
+            *Data é obrigatória
+        </div>
+
+        <select class="top10px form-control" ng-required="true" ng-model="contato.operadora" ng-options=" operadora.nome +' (' +(operadora.preco | currency )+ ')' for operadora in operadoras | orderBy:'nome'">
+            <option value="">Selecione uma operadora</option>
+        </select>
+
+    </form>
+
+
+    <button class="btn btn-primary btn-block" ng-click="adionarContato(contato)" ng-disabled="contatoForm.$invalid" ng-required="true" >Adicionar Contato</button>
+
+
+</div>
