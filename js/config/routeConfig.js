@@ -15,6 +15,11 @@
          Para ver tal efeito, basta ver a edicao do(s) metodo(s) no arquivo /controllers/listaTelefonicaCtrl.js 
       */
 angular.module("mygithub").config(function ($routeProvider) {
+    $routeProvider.when("/home", {//definindo uma rota /perfil
+        templateUrl: "view/home.html",//eh quem ira ser renderizado quando fizer /perfil
+        // controller: "homeCtrl" //Removido por travar qdo selecionado dinamic. outro usuario
+                                  //Provalv. o motivo seja: esta eh uma outra "instancia" do homeCtrl, ou seja, diferente do homeCtrl la no body do index.html   
+    });
     $routeProvider.when("/perfil", {//definindo uma rota /perfil
         templateUrl: "view/perfil.html",//eh quem ira ser renderizado quando fizer /perfil
         // controller: "homeCtrl" //Removido por travar qdo selecionado dinamic. outro usuario
@@ -52,5 +57,5 @@ angular.module("mygithub").config(function ($routeProvider) {
     $routeProvider.when("/error", {
         templateUrl: "view/error.html"
     });
-    $routeProvider.otherwise({redirectTo: "/perfil"});//se digitar uma rota invalida eh redirecionado para esta
+    $routeProvider.otherwise({redirectTo: "/home"});//se digitar uma rota invalida eh redirecionado para esta
 });

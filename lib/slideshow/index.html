@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="João Júnior">
+    <meta name="description" content="Slide Show">
+    <meta name="version" content="1.0">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <title>SlideShow - João Júnior®</title> 
+
+
+    <!-- acrescentar no index-->
+    <link rel="stylesheet" type="text/css" href="css/slideshow.css">
+
+</head>
+<body>
+
+
+    <!-- modelo de div usada -->
+    <div id="slideshow">
+        <!-- acrescentar <img> para aumentar slide -->
+        <img  src="img/slideshow/img1.png" alt="slideshow 1" onload="start(2000,true)" >
+        <img  src="img/slideshow/img2.png" alt="slideshow 2">   
+        <img  src="img/slideshow/img3.png" alt="slideshow 3"> 
+        <!-- <img  src="lib/slideshow/img/img2.png" alt="slideshow 2">  -->
+    
+        <div id="slidebtn"> 
+            <!-- btn add dinamicamente via slideshow.js -->                    
+        </div>          
+    </div>
+
+
+
+    <!-- acrescentar no index-->
+    <script src="js/slideshow.js"></script> 
+
+</body>
+</html>

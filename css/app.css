@@ -45,7 +45,8 @@ a:ACTIVE{color: #ffffff} */
   box-shadow: -2px 5px 24px  #1B1C1C, 12px 19px 2px rgba(0, 0, 0, 0.1),
               -2px 15px 24px #1B1C1C, 12px 195px 2px rgba(0, 0, 0, 0.2);
    /* Sobrear no Bootstrap: shadow-lg */
-  background-image: url(../img/back-office5.jpg);
+  background-image: linear-gradient(to bottom, 
+	transparent 0%, #0009 40%),url(../img/back-office5.jpg);
   background-repeat: round repeat;/* encaixa a imagem na div */
   
   max-width: auto;
@@ -57,11 +58,7 @@ a:ACTIVE{color: #ffffff} */
 #index-principal .alerta{
   padding: 15px;
 }
-#index-principal .pelicula{
-  margin: 0;
-  padding: 0;
-  background-color: #20180179;
-}
+
 
 #index-principal .singlepage{
   padding-top: 65px;
@@ -155,10 +152,26 @@ a:ACTIVE{color: #ffffff} */
 } */
 
 /* main *************************************************/
+/* Home   ***********/
+#home{
+  background-color: white;
+  border-radius: 0.4rem;
+  padding: 25px;
+}
 
+#home .home-menu{
+  background-color: rgb(231, 237, 238);
+  /* border-radius: 0.4rem; */
+  padding: 5px;
+  max-width: auto;
+}
+
+#home .home-container{
+  align-content: center;
+}
 /* perfil ***********/
 
-#perfil #container-img {
+#avatar-container{
   background-color: #f5eeee;
   /* border-style: ridge; */
   border-radius: 10%;
@@ -167,16 +180,16 @@ a:ACTIVE{color: #ffffff} */
   padding:  30px;
   max-width: 470px;
 }
-#perfil #avatar-img{
+#avatar-img{
   /* background-color: #43555a3b;#6b663e3b */
-  padding-bottom: 10px;
-  margin-bottom: 25px;
+
+  margin-bottom: 15px;
   border-style: double;
   max-width: 100%;
   height: auto;
 }
 
-#perfil #btn-perfil{
+#avatar-btn{
   /* background-color: rgba(13, 113, 219, 0.918); */
   font-size: 20px;
   /* font-family: Arial, Helvetica, sans-serif; */
@@ -188,24 +201,25 @@ a:ACTIVE{color: #ffffff} */
   padding-left: 0.1rem;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
+  display: block ruby;
 }
-#perfil hr{
+#avatar-hr{
   height: 1.3px;
   font-weight: bolder;
 }
 
-#perfil p{
+#avatar-p{
   font-size: 19px;
   /* font-family: Arial, Helvetica, sans-serif; */
   font-weight: bolder;
   color: #ffee00cc;
 }
 
-#perfil .btn-social{
+/* #perfil .btn-social{
   box-shadow: 0px 1px #1B1C1C, 7px 10px 2px rgba(0, 0, 0, 0.2);
-  /* background-color:rgba(152, 158, 160, 0.918); */
+  background-color:rgba(152, 158, 160, 0.918);
   color: rgb(202, 198, 198);
-}
+} */
 
 /* competencias ****************************************************/
 #competencias {
@@ -281,4 +295,15 @@ footer hr {
 }
 #menucursos h2{
   color: #050505;
+}
+
+
+@media screen and (max-width: 360px) and (max-width: 767px){
+  #home .home-menu{
+    padding: 15px;
+    /* line-height: 13; */
+  }
+  #home .home-slide{
+    margin: 15px !important;
+  }
 }

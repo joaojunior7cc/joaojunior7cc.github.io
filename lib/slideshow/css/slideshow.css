@@ -1,0 +1,31 @@
+#slideshow{
+    margin: 4px;
+    padding: 0px;
+    text-align: center;
+}
+
+#slideshow img{
+    max-width:  100%;
+    border-radius: 9px;
+}
+
+#slidebtn { 
+    position: relative;
+    margin-top: -40px;
+    margin-bottom: 20px; 
+}
+
+#slidebtn button{
+    opacity: 0.5;
+    min-width: 5px;   
+    margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 360px) and (max-width: 767px){
+    #slideshow{
+        margin: 10px;
+    }
+    #slidebtn button{
+        display: none; 
+    }
+}

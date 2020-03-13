@@ -41,6 +41,9 @@
     <script src="js/services/listatelefonica/contatosAPIService.js"></script>
     <script src="js/services/listatelefonica/operadorasAPIService.js"></script>
     
+    <!-- slideshow -->
+    <link type="text/css"  rel="stylesheet" href="lib/slideshow/css/slideshow.css">
+
     <!-- git2 -->
     <link type="text/css" rel="stylesheet" href="lib/github/css/style.css">
     <!-- <link type="text/css" rel="stylesheet"  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" /> -->
@@ -51,19 +54,17 @@
 
     <div  ng-include="'view/header.html'"></div>
 
-    <main id="index-principal" class="masthead text-white text-center">  
-        <div class="pelicula">       
-            <div class="singlepage"><!-- uso single para colocar padding etc --> 
+    <main id="index-principal" class="masthead text-white text-center">   
+        <div class="singlepage"><!-- uso single para colocar padding etc --> 
 
-                <aside ng-if="err" class="alerta flex-column">            
-                    <ui-alert title="Ops, Aconteceu um problema!">                        
-                        {{erro}}
-                    </ui-alert>            
-                </aside>
-                
-                <aside ng-view></aside>   
+            <aside ng-if="err" class="alerta flex-column">            
+                <ui-alert title="Ops, Aconteceu um problema!">                        
+                    {{erro}}
+                </ui-alert>            
+            </aside>
+            
+            <aside ng-view></aside>   
 
-            </div>
         </div>
     </main>
 
@@ -85,6 +86,8 @@
     <!-- github2 -->
     <script src="lib/github/dist/github-calendar.min.js"></script>
     <script src="lib/github/js/main.js"></script>
+    <!-- slideshow -->
+    <script src="lib/slideshow/js/slideshow.js"></script>
     
 </body>
 </html>
