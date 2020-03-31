@@ -12,8 +12,8 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
     // ListaTelefonica
     $scope.contatos = [];
     $scope.contato = [];
-    $scope.operadoas=[];
-
+    $scope.operadoras=[];
+    $scope.operadora=[];
     console.log("Entrou no HomeCrl!");
     console.log($scope.userselect);
 
@@ -52,10 +52,10 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
         operadorasAPI.getOperadorasJSON().then(function(response) {
             
             console.log('GET HOME OK ');
-            $scope.operadoas = response.data.operadoras;
-            $scope.operadoa = $scope.operadoas[$scope.userselect];
+            $scope.operadoras = response.data.operadoras;
+            $scope.operadora = $scope.operadoras[$scope.userselect];
 
-            console.log($scope.operadoas);
+            console.log($scope.operadoras);
             
         },function (e) {
             $scope.err = true;
@@ -73,7 +73,7 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
 
             $scope.curriculos = response.data.curriculos;
             $scope.curriculo = $scope.curriculos[$scope.userselect];
-            //console.log($scope.usuarios);
+            console.log($scope.usuarios);
             //console.log($scope.usuario);
             //console.log($scope.experiencias);
             //console.log($scope.curriculo);
