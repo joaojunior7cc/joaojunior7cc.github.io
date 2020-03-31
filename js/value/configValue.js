@@ -3,6 +3,6 @@
 angular.module("mygithub").constant("configValue",{
    //baseUrlBack: "http://localhost:3412",
    //baseUrlJSON : "js/value/",
-   //baseUrlJSON: "http://joaojunio.sytes.net/slim/github"
-   baseUrlJSON: "http://localhost/slim/github"
+   baseUrlJSON: "http://joaojunio.sytes.net/slim/github"
+   //baseUrlJSON: "http://localhost/slim/github"
 });
