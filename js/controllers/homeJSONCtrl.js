@@ -1,5 +1,6 @@
 
 angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPIService,serialGenerator,contatosAPI,operadorasAPI) {
+    $scope.loaded=0;
     $scope.usuarios = [];
     $scope.usuario = []; 
     $scope.userselect=1; // usuario padrao
@@ -31,6 +32,12 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
         console.log($scope.userselect);
         console.log($scope.usuario);
     };
+    
+    $scope.setAPI = function (loaded) {
+        $scope.loaded = loaded;
+        selectAPI();
+    };
+
     var carregarLTContatosAPI = function () {
         contatosAPI.getContatosAPI().then(function(response) {
             
@@ -44,9 +51,9 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
             $scope.err = true;
             $scope.erro = "Algo deu errado ["+$scope.err+"] no GET CONTATOS: "+ e;
             console.log($scope.erro);
-            carregarLTContatosJSON();
         });      
-    };
+    };    
+    //dados JSON
     var carregarLTContatosJSON = function () {
         contatosAPI.getContatosJSON().then(function(response) {
             
@@ -75,9 +82,9 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
             $scope.err = true;
             $scope.erro = "Algo deu errado ["+$scope.err+"] no GET OPERADOREAS: "+ e;
             console.log($scope.erro);
-            carregarLTOperadorasJSON();
         });      
     };
+    //dados JSON
     var carregarLTOperadorasJSON = function () {
         operadorasAPI.getOperadorasJSON().then(function(response) {
             
@@ -113,10 +120,8 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
             $scope.err = true;
             $scope.erro = "Algo deu errado ["+$scope.err+"] no GET USUARIOS: "+ e;
             console.log($scope.erro);
-            carregarUsuariosJSON();
         });    
     };
-
     var carregarUsuariosJSON = function () {
         usuariosAPIService.getUsuariosJSON().then(function(response) {
             
@@ -150,12 +155,22 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
         });
     };
 
-    //carregarUsuariosAPI();
-    carregarUsuariosJSON();
-    //carregarLTContatosAPI();
-    carregarLTContatosJSON();
-    //carregarLTOperadorasAPI();
-    carregarLTOperadorasJSON();
+    var selectAPI = function () {
+        console.log("loaded: "+$scope.loaded);     
+        if ($scope.loaded == 0) {
+            console.log("LOADING JSON");     
+            carregarUsuariosJSON();
+            carregarLTContatosJSON();
+            carregarLTOperadorasJSON();
+        } else {   
+            console.log("LOADING API");     
+            carregarUsuariosAPI();
+            carregarLTContatosAPI();
+            carregarLTOperadorasAPI();
+        } 
+    };
+    
+    selectAPI();
     console.log("Saindo do HomeCtrl: "+serialGenerator.generate());
 
 } );
