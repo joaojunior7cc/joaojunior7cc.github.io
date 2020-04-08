@@ -1,12 +1,12 @@
 {
     "usuarios": [
-        {"id":"0", "nome": "Usuário Teste", "profissao" : "web designer", "nivel":"Sr", "stack":"Front-end", "linguagens":"HTML, CSS e JavaScript", "telefone": "+ 55 (11) 9DDDD-DDDD","email":"fake@gmail.com","cidade":"Bueno Aires","uf":"PO","pais":"ARG", "data": "29/02/2021", "imgAvatar": "avataaars.svg", "icon":"fas fa-code"},
+        {"id":"0", "nome": "Usuário Teste JSON", "profissao" : "web designer", "nivel":"Sr", "stack":"Front-end", "linguagens":"HTML, CSS e JavaScript", "telefone": "+ 55 (11) 9DDDD-DDDD","email":"fake@gmail.com","cidade":"Bueno Aires","uf":"PO","pais":"ARG", "data": "29/02/2021", "imgAvatar": "avataaars.svg", "icon":"fas fa-code"},
         {"id":"1", "nome": "joão júnior", "profissao" : "desenvolvedor Web", "nivel":"jr", "stack":"full stack", "linguagens":"Java e PHP", "telefone": "+ 55 (21) 9XXXX-XXXX", "email":"email@email.com","cidade":"Cidade","uf":"UF","pais":"BRA", "data": "22/02/2020", "imgAvatar": "avataaars2.svg", "icon":"fab fa-java"}
     ],
     "curriculos":[
         {
             "idusuario":"0",
-            "resumo":"Estudando com muito sono kkk...",
+            "resumo":"Estudando com muito sono kkk...JSON",
             
             "formacoes":[
                 {"id":"1","descricao":"Ciência da Computação","datainicio":"2014.2","datatermino":"2021.1","instituicao":"IFCE Maracanaú","semestreatual":"7! semestre"}

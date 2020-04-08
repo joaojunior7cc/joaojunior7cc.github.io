@@ -1,5 +1,9 @@
 angular.module("mygithub").factory("usuariosAPIService",function ($http,configValue) {
 
+    var _getUsuariosAPI = function () {
+        console.log(configValue.baseUrlAPI+"/usuarios.json");
+        return $http.get(configValue.baseUrlAPI+"/usuarios.json");        
+    }; 
     var _getUsuariosJSON = function () {
         console.log(configValue.baseUrlJSON+"/usuarios.json");
         return $http.get(configValue.baseUrlJSON+"/usuarios.json");        
@@ -20,6 +24,7 @@ angular.module("mygithub").factory("usuariosAPIService",function ($http,configVa
     };
     
     return{
+        getUsuariosAPI : _getUsuariosAPI,
         getUsuariosJSON : _getUsuariosJSON,
         getUsuariosBack : _getUsuariosBack,
         saveUsuariosJSON : _saveUsuariosJSON,

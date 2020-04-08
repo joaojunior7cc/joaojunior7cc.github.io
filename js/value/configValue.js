@@ -2,7 +2,7 @@
 //angular.module("listaTelefonica").value("config",{
 angular.module("mygithub").constant("configValue",{
    //baseUrlBack: "http://localhost:3412",
-   baseUrlJSON : "js/value/"
-   //baseUrlJSON: "http://joaojunio.sytes.net/slim/github"
-   //baseUrlJSON: "http://localhost/slim/github"
+   baseUrlJSON : "js/value/",
+   baseUrlAPI: "http://joaojunior.sytes.net/apps/slim/github",
+   //baseUrlJSON: "http://localhost/apps/slim/github",
 });
