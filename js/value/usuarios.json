@@ -90,8 +90,8 @@
             "minicursos":[
                 {"id":"5","autor":"Rodrigo Branas","nome":"Bower","datainicio":"2020.1","datatermino":"2020.1","cargahoraria":"0.5h","tecnologias":"Bower, JavaScript, VSCode"},
                 {"id":"4","autor":"Rodrigo Branas","nome":"AngularJS","datainicio":"2020.1","datatermino":"2020.1","cargahoraria":"8h","tecnologias":"AngularJS, Bootstrap 3, Nodejs, Javascript, VSCode"},
-                {"id":"3","autor":"Rodrigo Branas","nome":"Nodejs","datainicio":"2020.1","datatermino":"2020.1","cargahoraria":"3.6h","tecnologias":"Nodejs, JavaScript, Terminal Linux"},
-                {"id":"2","autor":"Rodrigo Branas","nome":"JavaScript","datainicio":"2020.1","datatermino":"2020.1","cargahoraria":"4.5h","tecnologias":"JavaScript, Nodejs, Terminal Linux, VSCode"},
+                {"id":"3","autor":"Rodrigo Branas","nome":"Nodejs","datainicio":"2020.1","datatermino":"2020.1","cargahoraria":"3.6h","tecnologias":"Nodejs, JavaScript, Bash (Terminal Linux)"},
+                {"id":"2","autor":"Rodrigo Branas","nome":"JavaScript","datainicio":"2020.1","datatermino":"2020.1","cargahoraria":"4.5h","tecnologias":"JavaScript, Nodejs, Bash (Terminal Linux), VSCode"},
                 {"id":"1","autor":"Rodrigo Branas","nome":"Git","datainicio":"2020.1","datatermino":"2020.1","cargahoraria":"1.3h","tecnologias":"Git, GitHub, Bash (Terminal Linux)"}
             ],
             "habilidades":[
