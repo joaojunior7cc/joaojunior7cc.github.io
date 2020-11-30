@@ -65,7 +65,7 @@
             "resumo":"Resuma sua carreira aqui...",
             
             "formacoes":[
-                {"id":"1","descricao":"Ciência da Computação","datainicio":"2014.2","datatermino":"2021.1","instituicao":"IFCE","semestreatual":"8º semestre"}
+                {"id":"1","descricao":"Ciência da Computação","datainicio":"2014.2","datatermino":"2021.2","instituicao":"IFCE","semestreatual":"8º semestre"}
             ],
             "experiencias":[
                 {"id":"3","empresa":"Hospital distrital","cargo":"Agente administrativo","subcargo":"assistente de farmácia","dataadmissao":"2012.1","datademissao":"2013.2","descricaofuncao":"Ag. Administrativo: Recebimento de material medico-hospitalar, nota fiscal, entrada no sistema,etc. Auxiliar de farmácia: Abastecimento de material medico-hospitalar e medicamento.","tecnologias":["PC","impressora","windows", "telefone","excel"]},
