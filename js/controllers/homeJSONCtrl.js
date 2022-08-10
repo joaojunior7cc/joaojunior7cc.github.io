@@ -42,7 +42,8 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
         contatosAPI.getContatosAPI().then(function(response) {
             
             console.log('GET HOME OK carregarLTContatosAPI');
-            $scope.contatos = response.data.data.contatos;
+            data = response.data.data
+            $scope.contatos = data.contatos;
             $scope.contato = $scope.contatos[$scope.userselect];
 
             console.log($scope.contatos);
@@ -73,7 +74,8 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
         operadorasAPI.getOperadorasAPI().then(function(response) {
             
             console.log('GET HOME OK carregarLTOperadorasAPI');
-            $scope.operadoras = response.data.data.operadoras;
+            data = response.data.data
+            $scope.operadoras = data.operadoras;
             $scope.operadora = $scope.operadoras[$scope.userselect];
 
             console.log($scope.operadoras);
@@ -106,10 +108,11 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
             
             console.log('GET HOME OK carregarUsuariosAPI');   
             console.log(response.data);
-            $scope.usuarios = response.data.data.usuarios;         
+            data = response.data.data;
+            $scope.usuarios = data.usuarios;         
             $scope.usuario = $scope.usuarios[$scope.userselect];
 
-            $scope.curriculos = response.data.curriculos;
+            $scope.curriculos = data.curriculos;
             $scope.curriculo = $scope.curriculos[$scope.userselect];
             console.log($scope.usuarios);
             //console.log($scope.usuario);
