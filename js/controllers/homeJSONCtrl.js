@@ -1,6 +1,6 @@
 
 angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPIService,serialGenerator,contatosAPI,operadorasAPI) {
-    $scope.loaded=0;
+    $scope.loaded=1;
     $scope.usuarios = [];
     $scope.usuario = []; 
     $scope.userselect=1; // usuario padrao
@@ -172,5 +172,6 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
     
     selectAPI();
     console.log("Saindo do HomeCtrl: "+serialGenerator.generate());
-
+    // $scope.cacheObject.removeAll();
+    // $scope.cacheObject.destroy();
 } );
