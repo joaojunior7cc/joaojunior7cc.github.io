@@ -41,7 +41,7 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
     var carregarLTContatosAPI = function () {
         contatosAPI.getContatosAPI().then(function(response) {
             
-            console.log('GET HOME OK ');
+            console.log('GET HOME OK carregarLTContatosAPI');
             $scope.contatos = response.data.contatos;
             $scope.contato = $scope.contatos[$scope.userselect];
 
@@ -72,7 +72,7 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
     var carregarLTOperadorasAPI = function () {
         operadorasAPI.getOperadorasAPI().then(function(response) {
             
-            console.log('GET HOME OK ');
+            console.log('GET HOME OK carregarLTOperadorasAPI');
             $scope.operadoras = response.data.operadoras;
             $scope.operadora = $scope.operadoras[$scope.userselect];
 
@@ -104,7 +104,7 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
     var carregarUsuariosAPI = function () {
         usuariosAPIService.getUsuariosAPI().then(function(response) {
             
-            console.log('GET HOME OK ');   
+            console.log('GET HOME OK carregarUsuariosAPI');   
             console.log(response.data);
             $scope.usuarios = response.data.usuarios;         
             $scope.usuario = $scope.usuarios[$scope.userselect];
@@ -125,7 +125,7 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
     var carregarUsuariosJSON = function () {
         usuariosAPIService.getUsuariosJSON().then(function(response) {
             
-            console.log('GET HOME OK ');   
+            console.log('GET HOME OK carregarUsuariosJSON');   
             console.log(response.data);
             $scope.usuarios = response.data.usuarios;         
             $scope.usuario = $scope.usuarios[$scope.userselect];
