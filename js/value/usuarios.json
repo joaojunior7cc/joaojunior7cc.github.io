@@ -1,7 +1,7 @@
 {
     "usuarios": [
         {"id":"0", "nome": "Usuário Teste JSON", "profissao" : "web designer", "nivel":"Sr", "stack":"Front-end", "linguagens":"HTML, CSS e JavaScript", "telefone": "+ 55 (11) 9DDDD-DDDD","email":"fake@gmail.com","cidade":"Bueno Aires","uf":"PO","pais":"ARG", "data": "29/02/2021", "imgAvatar": "avataaars.svg", "icon":"fas fa-code"},
-        {"id":"1", "nome": "joão júnior", "profissao" : "desenvolvedor Web", "nivel":"jr", "stack":"full stack", "linguagens":"Java e PHP", "telefone": "+ 55 (21) 9XXXX-XXXX", "email":"email@email.com","cidade":"Cidade","uf":"UF","pais":"BRA", "data": "22/02/2020", "imgAvatar": "avataaars2.svg", "icon":"fab fa-java"}
+        {"id":"1", "nome": "joão júnior", "profissao" : "desenvolvedor web e mobile", "nivel":"jr", "stack":"full stack", "linguagens":"laravel, nodejs, react e reactnative", "telefone": "+ 55 (21) 9XXXX-XXXX", "email":"email@email.com","cidade":"Cidade","uf":"UF","pais":"BRA", "data": "22/02/2020", "imgAvatar": "avataaars2.svg", "icon":"fab fa-java"}
     ],
     "curriculos":[
         {
@@ -65,7 +65,7 @@
             "resumo":"Resuma sua carreira aqui...",
             
             "formacoes":[
-                {"id":"1","descricao":"Ciência da Computação","datainicio":"2014.2","datatermino":"2021.2","instituicao":"IFCE","semestreatual":"8º semestre"}
+                {"id":"1","descricao":"Ciência da Computação","datainicio":"2015.1","datatermino":"2022.2","instituicao":"IFCE","semestreatual":"8º semestre"}
             ],
             "experiencias":[
                 {"id":"4","empresa":"IFCE","cargo":"Bolsista volutário","subcargo":"Dev back-end junior","dataadmissao":"2019.2","datademissao":"2022.1","descricaofuncao":"Desenvolvimento: API REST, Routas(end-points, Token JWT-Auth), Camada de BD (Migrations, Seeders, Model, Relations), etc.","tecnologias":["Laravel","PHP","JWT_auth","Token","MySQL", "VSCode"]},
@@ -100,15 +100,21 @@
                 {"id":"1","nome":"frontend","tecnologias":  [   
                                                                 {"nome":"HTML5","nivel":88},
                                                                 {"nome":"CSS3","nivel":78},
-                                                                {"nome":"JavaScript","nivel":58}, 
-                                                                {"nome":"AngularJS","nivel":70}, 
+                                                                {"nome":"JavaScript","nivel":69}, 
+                                                                {"nome":"AngularJS","nivel":70},  
+                                                                {"nome":"React","nivel":65},
+                                                                {"nome":"React Native","nivel":65}, 
                                                                 {"nome":"Bootstrap","nivel":63},
                                                                 {"nome":"jQuery","nivel":35},
                                                                 {"nome":"JSON","nivel":71},
                                                                 {"nome":"AJAX","nivel":45}
                                                             ]},
                 {"id":"2","nome":"backend","tecnologias":   [   
-                                                                {"nome":"JAVA","nivel":75},
+                                                                {"nome":"Nodejs","nivel":76},     
+                                                                {"nome":"PHP","nivel":75},                                                                
+                                                                {"nome":"Laravel","nivel":71},
+                                                                {"nome":"JAVA","nivel":75},                                                                
+                                                                {"nome":"Springboot","nivel":61},
                                                                 {"nome":"JPA","nivel":65},
                                                                 {"nome":"Hibernate","nivel":68}, 
                                                                 {"nome":"CDI","nivel":53},
@@ -137,8 +143,10 @@
                 {"id":"1","descricao":"inglês","status":"básico","nivel":49}                
             ],
             "interesses":[
-                {"id":"1","descricao":"Programação Web"},
-                {"id":"3","descricao":"Banco de dados"}
+                {"id":"1","descricao":"Back-end"},
+                {"id":"2","descricao":"Programação Web"},
+                {"id":"3","descricao":"Programação mobile"},
+                {"id":"4","descricao":"Banco de dados"}
             ]
         }
  
