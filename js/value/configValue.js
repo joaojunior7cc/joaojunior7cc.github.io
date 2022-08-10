@@ -3,6 +3,6 @@
 angular.module("mygithub").constant("configValue",{
    //baseUrlBack: "http://localhost:3412",
    baseUrlJSON : "js/value",
-   baseUrlAPI  : "https://jjr.dev.br/api",
+   baseUrlAPI  : "https://server.jjr.dev.br/api",
    //baseUrlAPI: "http://localhost/apps/slim/github",
 });
