@@ -1,6 +1,6 @@
 
 angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPIService,serialGenerator,contatosAPI,operadorasAPI) {
-    $scope.loaded=1;
+    $scope.loaded=0;
     $scope.usuarios = [];
     $scope.usuario = []; 
     $scope.userselect=1; // usuario padrao
@@ -42,7 +42,7 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
         contatosAPI.getContatosAPI().then(function(response) {
             
             console.log('GET HOME OK carregarLTContatosAPI');
-            $scope.contatos = response.data.contatos;
+            $scope.contatos = response.data.data.contatos;
             $scope.contato = $scope.contatos[$scope.userselect];
 
             console.log($scope.contatos);
@@ -73,7 +73,7 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
         operadorasAPI.getOperadorasAPI().then(function(response) {
             
             console.log('GET HOME OK carregarLTOperadorasAPI');
-            $scope.operadoras = response.data.operadoras;
+            $scope.operadoras = response.data.data.operadoras;
             $scope.operadora = $scope.operadoras[$scope.userselect];
 
             console.log($scope.operadoras);
@@ -106,7 +106,7 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
             
             console.log('GET HOME OK carregarUsuariosAPI');   
             console.log(response.data);
-            $scope.usuarios = response.data.usuarios;         
+            $scope.usuarios = response.data.data.usuarios;         
             $scope.usuario = $scope.usuarios[$scope.userselect];
 
             $scope.curriculos = response.data.curriculos;
