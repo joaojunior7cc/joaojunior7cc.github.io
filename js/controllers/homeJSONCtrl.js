@@ -1,6 +1,6 @@
 
 angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPIService,serialGenerator,contatosAPI,operadorasAPI) {
-    $scope.loaded=0;
+    $scope.loaded=1;
     $scope.usuarios = [];
     $scope.usuario = []; 
     $scope.userselect=1; // usuario padrao
@@ -16,7 +16,7 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
     $scope.operadoras=[];
     $scope.operadora=[];
     console.log("Entrou no HomeCrl!");
-    console.log($scope.userselect);
+    // console.log($scope.userselect);
 
 
 
@@ -29,8 +29,8 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
         $scope.userselect = idUser;
         $scope.usuario = $scope.usuarios[idUser];
         $scope.curriculo = $scope.curriculos[idUser];
-        console.log($scope.userselect);
-        console.log($scope.usuario);
+        // console.log($scope.userselect);
+        // console.log($scope.usuario);
     };
     
     $scope.setAPI = function (loaded) {
@@ -45,13 +45,14 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
             data = response.data.data
             $scope.contatos = data.contatos;
             $scope.contato = $scope.contatos[$scope.userselect];
-
-            console.log($scope.contatos);
+            // console.log($scope.contatos);
             
         },function (e) {
             $scope.err = true;
             $scope.erro = "Algo deu errado ["+$scope.err+"] no GET CONTATOS: "+ e;
             console.log($scope.erro);
+            carregarLTContatosJSON();
+
         });      
     };    
     //dados JSON
@@ -61,8 +62,7 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
             console.log('GET HOME OK ');
             $scope.contatos = response.data.contatos;
             $scope.contato = $scope.contatos[$scope.userselect];
-
-            console.log($scope.contatos);
+            // console.log($scope.contatos);
             
         },function (e) {
             $scope.err = true;
@@ -77,13 +77,13 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
             data = response.data.data
             $scope.operadoras = data.operadoras;
             $scope.operadora = $scope.operadoras[$scope.userselect];
-
-            console.log($scope.operadoras);
+            // console.log($scope.operadoras);
             
         },function (e) {
             $scope.err = true;
             $scope.erro = "Algo deu errado ["+$scope.err+"] no GET OPERADOREAS: "+ e;
             console.log($scope.erro);
+            carregarLTOperadorasJSON();
         });      
     };
     //dados JSON
@@ -93,8 +93,7 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
             console.log('GET HOME OK ');
             $scope.operadoras = response.data.operadoras;
             $scope.operadora = $scope.operadoras[$scope.userselect];
-
-            console.log($scope.operadoras);
+            // console.log($scope.operadoras);
             
         },function (e) {
             $scope.err = true;
@@ -107,14 +106,14 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
         usuariosAPIService.getUsuariosAPI().then(function(response) {
             
             console.log('GET HOME OK carregarUsuariosAPI');   
-            console.log(response.data);
+            // console.log(response.data.data);
             data = response.data.data;
             $scope.usuarios = data.usuarios;         
             $scope.usuario = $scope.usuarios[$scope.userselect];
 
             $scope.curriculos = data.curriculos;
             $scope.curriculo = $scope.curriculos[$scope.userselect];
-            console.log($scope.usuarios);
+            // console.log($scope.usuarios);
             //console.log($scope.usuario);
             //console.log($scope.experiencias);
             //console.log($scope.curriculo);
@@ -123,19 +122,20 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
             $scope.err = true;
             $scope.erro = "Algo deu errado ["+$scope.err+"] no GET USUARIOS: "+ e;
             console.log($scope.erro);
+            carregarUsuariosJSON();
         });    
     };
     var carregarUsuariosJSON = function () {
         usuariosAPIService.getUsuariosJSON().then(function(response) {
             
             console.log('GET HOME OK carregarUsuariosJSON');   
-            console.log(response.data);
+            // console.log(response.data);
             $scope.usuarios = response.data.usuarios;         
             $scope.usuario = $scope.usuarios[$scope.userselect];
 
             $scope.curriculos = response.data.curriculos;
             $scope.curriculo = $scope.curriculos[$scope.userselect];
-            console.log($scope.usuarios);
+            // console.log($scope.usuarios);
             //console.log($scope.usuario);
             //console.log($scope.experiencias);
             //console.log($scope.curriculo);
