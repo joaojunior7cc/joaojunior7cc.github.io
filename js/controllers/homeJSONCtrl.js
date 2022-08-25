@@ -168,8 +168,10 @@ angular.module("mygithub").controller("homeCtrl",function ($scope,usuariosAPISer
         } else {   
             console.log("LOADING API");     
             carregarUsuariosAPI();
-            carregarLTContatosAPI();
-            carregarLTOperadorasAPI();
+            // carregarLTContatosAPI();
+            // carregarLTOperadorasAPI();
+            carregarLTContatosJSON();
+            carregarLTOperadorasJSON();
         } 
     };
     
